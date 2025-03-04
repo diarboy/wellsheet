@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'allbibek',
+  title: 'Wellshit Docs',
   description: 'Develop, Build, and Innovate with Confidence',
   base: '/',
 
