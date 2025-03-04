@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.ky1cyRTO.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"home"},"headers":[],"relativePath":"blog/pdfmake.md","filePath":"blog/pdfmake.md","lastUpdated":null}'),o={name:"blog/pdfmake.md"};function r(s,d,n,p,c,l){return a(),t("div")}const _=e(o,[["render",r]]);export{f as __pageData,_ as default};
