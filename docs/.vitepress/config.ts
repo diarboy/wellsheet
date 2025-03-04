@@ -9,7 +9,7 @@ export default defineConfig({
   head: [
     [
       'link',
-      { rel: 'icon', type: 'image/x-icon', href: '/wellshit/favicon.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
     ],
     ['link', { rel: 'stylesheet', href: '/custom.css' }],
     [
