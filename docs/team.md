@@ -67,7 +67,7 @@ const contributors = [
   <p>Our team consists of open-source contributors!</p>
 </HeroParallax>
 
-<VPTeamPage style="margin: 20px;">
+<VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
       Meet Our Team
