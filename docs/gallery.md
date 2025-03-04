@@ -37,28 +37,28 @@ features:
 
 </div>
 
-<HeroParallax>
+<!-- <HeroParallax>
   <span style="font-size: 2.5rem;">📷</span>
   <h1>Love Capture.</h1>
   <p>Each image I capture is a story waiting to be told, a moment frozen in time, and an emotion expressed through light and shadow.!</p>
-</HeroParallax>
+</HeroParallax> -->
 
 </section>
 
 <section class="gallery-content">
   <h2>Explore the Collection</h2>
-  <ClientOnly>
+  <!-- <ClientOnly>
     <GalleryFilter />
     <GalleryMasonry />
     <GalleryCarousel />
-  </ClientOnly>
+  </ClientOnly> -->
 </section>
 
-<script setup>
+<!-- <script setup>
 
 import HeroParallax from './.vitepress/theme/components/HeroParallax.vue';
 
-</script>
+</script> -->
 
 <style>
 
