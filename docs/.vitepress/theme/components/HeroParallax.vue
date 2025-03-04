@@ -45,7 +45,7 @@ const isVisible = useElementVisibility(target);
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://framerusercontent.com/images/RoHrmhTbdYJgHCLAtYVIPACylNw.png?scale-down-to=512') no-repeat center;
+  background: url('https://framerusercontent.com/images/RoHrmhTbdYJgHCLAtYVIPACylNw.png') no-repeat center;
   background-size: cover;
   border-radius: 10px;
   transition: transform 0.1s ease-out;

@@ -61,13 +61,13 @@ const contributors = [
 ]
 </script>
 
-<!-- <HeroParallax>
+<HeroParallax>
   <span style="font-size: 3.5rem;">🚀</span>
   <h1>Meet Our Teammate.</h1>
   <p>Our team consists of open-source contributors!</p>
-</HeroParallax> -->
+</HeroParallax>
 
-<VPTeamPage>
+<VPTeamPage style="margin: 20px;">
   <VPTeamPageTitle>
     <template #title>
       Meet Our Team

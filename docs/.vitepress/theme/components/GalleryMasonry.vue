@@ -1,26 +1,33 @@
 <template>
   <div class="masonry-grid">
     <div 
-      v-for="(image, index) in images" 
+      v-for="(image, index) in displayedImages" 
       :key="index" 
       class="masonry-item"
       :class="{ 'large': isLargeColumn(index) }"
     >
-      <img :src="image.src" :alt="image.alt" @click="openLightbox(index)" />
+      <img :src="image.src" :alt="image.alt" loading="lazy" @click="openLightbox(index)" />
     </div>
   </div>
 
+  <button v-if="canLoadMore" class="load-more" @click="loadMore">
+    Load More
+  </button>
+
   <!-- Lightbox -->
+  <ClientOnly>
   <vue-easy-lightbox 
+    v-if="visible"
     :visible="visible" 
     :imgs="images.map(img => img.src)" 
     :index="lightboxIndex" 
     @hide="closeLightbox"
   />
+  </ClientOnly>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import VueEasyLightbox from "vue-easy-lightbox";
 
 const images = ref([
@@ -55,6 +62,11 @@ const images = ref([
 const visible = ref(false);
 const lightboxIndex = ref(0);
 
+const batchSize = 6;
+const displayedCount = ref(batchSize);
+const displayedImages = computed(() => images.value.slice(0, displayedCount.value));
+const canLoadMore = computed(() => displayedCount.value < images.value.length);
+
 const openLightbox = (index) => {
   lightboxIndex.value = index;
   visible.value = true;
@@ -64,10 +76,14 @@ const closeLightbox = () => {
   visible.value = false;
 };
 
-// Menentukan gambar di kolom ke-2 & ke-4 untuk diperbesar
-const isLargeColumn = (index) => {
-  return (index % 4 === 1 || index % 4 === 3); // Kolom ke-2 dan ke-4
+const loadMore = () => {
+  displayedCount.value += batchSize;
 };
+
+const isLargeColumn = (index) => {
+  return (index % 4 === 1 || index % 4 === 3);
+};
+
 </script>
 
 <style scoped>
@@ -109,6 +125,24 @@ const isLargeColumn = (index) => {
 
 .masonry-item.large {
   grid-row: span 2; /* Kolom ke-2 dan ke-4 lebih tinggi */
+}
+
+.load-more {
+  display: block;
+  width: auto;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  background: var(--vp-button-brand-bg);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+
+.load-more:hover {
+  background: #0056b3;
 }
 
 .masonry-item:nth-child(24) img {
