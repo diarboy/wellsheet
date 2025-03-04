@@ -4,14 +4,14 @@ export default defineConfig({
   lang: 'en-US',
   title: 'allbibek',
   description: 'Develop, Build, and Innovate with Confidence',
-  base: '/wellshit/',
+  base: '/',
 
   head: [
     [
       'link',
       { rel: 'icon', type: 'image/x-icon', href: '/wellshit/favicon.svg' },
     ],
-    ['link', { rel: 'stylesheet', href: '/wellshit/custom.css' }],
+    ['link', { rel: 'stylesheet', href: '/custom.css' }],
     [
       'link',
       {
