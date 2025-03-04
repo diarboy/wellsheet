@@ -40,7 +40,7 @@ features:
 <HeroParallax>
   <span style="font-size: 2.5rem;">📷</span>
   <h1>Love Capture.</h1>
-  <p>Each image I capture is a story waiting to be told, a moment frozen in time, and an emotion expressed through light and shadow.!</p>
+  <p>Each image I capture is a story waiting to be told, a moment frozen in time, and an emotion expressed through light and shadow.</p>
 </HeroParallax>
 
 </section>

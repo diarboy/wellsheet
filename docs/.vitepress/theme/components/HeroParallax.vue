@@ -37,6 +37,8 @@ const isVisible = useElementVisibility(target);
   opacity: v-bind(isVisible ? 1 : 0);
   transform: v-bind(isVisible ? "translateY(0)" : "translateY(50px)");
   transition: opacity 1s ease-out, transform 1s ease-out;
+  border-radius: 30px;
+  margin: 20px auto;
 }
 
 .hero-bg {
@@ -47,7 +49,6 @@ const isVisible = useElementVisibility(target);
   height: 100%;
   background: url('https://framerusercontent.com/images/RoHrmhTbdYJgHCLAtYVIPACylNw.png') no-repeat center;
   background-size: cover;
-  border-radius: 10px;
   transition: transform 0.1s ease-out;
   z-index: -1;
 }
@@ -56,7 +57,6 @@ const isVisible = useElementVisibility(target);
   position: relative;
   z-index: 2;
   padding: 20px;
-  border-radius: 10px;
 }
 
 ::v-deep(.hero-content h1) {
@@ -75,5 +75,9 @@ const isVisible = useElementVisibility(target);
 @media (max-width: 768px) {
    ::v-deep(.hero-content h1) { font-size: 2rem; }
 }
-  
+
+.hero {
+  position: relative;
+  height: 330px;
+}
 </style>
