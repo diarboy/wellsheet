@@ -42,7 +42,7 @@ export default defineConfig({
             text: 'Internal Link',
             items: [
               { text: 'Blog', link: '/blog/introduction' },
-              { text: 'PDF', link: '/pdfmake' },
+              { text: 'PDF', link: '/blog/pdfmake' },
               { text: 'Teams', link: '/team' },
               { text: '404', link: '/resources/internal/' },
             ],
