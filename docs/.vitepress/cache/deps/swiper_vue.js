@@ -11,6 +11,7 @@ import {
   ref,
   watch
 } from "./chunk-LW4I4DCF.js";
+import "./chunk-HKJ2B2AA.js";
 
 // node_modules/swiper/shared/ssr-window.esm.mjs
 function isObject(obj) {

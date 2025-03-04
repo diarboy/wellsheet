@@ -2,42 +2,75 @@
   "hash": "9e50836a",
   "configHash": "7ffbf201",
   "lockfileHash": "72367f34",
-  "browserHash": "77c80e72",
+  "browserHash": "ffb7668b",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a6e6b9f7",
+      "fileHash": "2c1d2ec3",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "076279d4",
+      "fileHash": "f34bf3bc",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "7c7c1f65",
+      "fileHash": "dbf14c21",
       "needsInterop": false
     },
     "vue-easy-lightbox": {
       "src": "../../../../node_modules/vue-easy-lightbox/dist/vue-easy-lightbox.esm.min.js",
       "file": "vue-easy-lightbox.js",
-      "fileHash": "0827333d",
+      "fileHash": "eb48d884",
       "needsInterop": false
     },
     "swiper/vue": {
       "src": "../../../../node_modules/swiper/swiper-vue.mjs",
       "file": "swiper_vue.js",
-      "fileHash": "2a71b397",
+      "fileHash": "ad171bd2",
       "needsInterop": false
+    },
+    "markdown-it": {
+      "src": "../../../../node_modules/markdown-it/index.mjs",
+      "file": "markdown-it.js",
+      "fileHash": "ce1849c4",
+      "needsInterop": false
+    },
+    "pdfmake/build/pdfmake": {
+      "src": "../../../../node_modules/pdfmake/build/pdfmake.js",
+      "file": "pdfmake_build_pdfmake.js",
+      "fileHash": "a0e5d33e",
+      "needsInterop": true
+    },
+    "pdfmake/build/vfs_fonts": {
+      "src": "../../../../node_modules/pdfmake/build/vfs_fonts.js",
+      "file": "pdfmake_build_vfs_fonts.js",
+      "fileHash": "5d7ec938",
+      "needsInterop": true
+    },
+    "docx": {
+      "src": "../../../../node_modules/docx/dist/index.mjs",
+      "file": "docx.js",
+      "fileHash": "ebcf9521",
+      "needsInterop": false
+    },
+    "file-saver": {
+      "src": "../../../../node_modules/file-saver/dist/FileSaver.min.js",
+      "file": "file-saver.js",
+      "fileHash": "fb319a78",
+      "needsInterop": true
     }
   },
   "chunks": {
     "chunk-LW4I4DCF": {
       "file": "chunk-LW4I4DCF.js"
+    },
+    "chunk-HKJ2B2AA": {
+      "file": "chunk-HKJ2B2AA.js"
     }
   }
 }
