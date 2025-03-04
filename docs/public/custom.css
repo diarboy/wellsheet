@@ -12,7 +12,7 @@
     --vp-button-brand-bg: #1f9fa2;
     }
 
-    .VPNavBarTitle {
+ /*   .VPNavBarTitle {
       font-family: 'Comfortaa', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
@@ -30,7 +30,7 @@
     .VPNavBar .title {
         font-size: 1.25rem;
     }
-  }
+  } */
 
     .VPHomeHero .name {
       font-family: 'Comfortaa', sans-serif !important;
