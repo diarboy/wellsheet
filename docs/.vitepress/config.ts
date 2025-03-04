@@ -2,16 +2,16 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'allbibek.',
+  title: 'allbibek',
   description: 'Develop, Build, and Innovate with Confidence',
-  base: '/allbibek/',
+  base: '/wellshit/',
 
   head: [
     [
       'link',
-      { rel: 'icon', type: 'image/x-icon', href: '/allbibek/favicon.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/wellshit/favicon.svg' },
     ],
-    ['link', { rel: 'stylesheet', href: '/allbibek/custom.css' }],
+    ['link', { rel: 'stylesheet', href: '/wellshit/custom.css' }],
     [
       'link',
       {
