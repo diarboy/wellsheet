@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'wellsheet.💭',
+  title: 'wellsheet.',
   description: 'Develop, Build, and Innovate with Confidence',
   base: '/',
 
