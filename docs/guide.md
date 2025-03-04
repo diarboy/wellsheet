@@ -129,20 +129,20 @@ Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
 
 ## Math Equations
 
-```
+<!-- ```
 $$
 f(x) = \int_{-\infty}^\infty
     \hat f(\xi)\,e^{2 \pi i \xi x}
     \,d\xi
 $$
-```
-When enabled, you can write math equations:
+``` -->
+<mark>When enabled, you can write math equations:</mark>
 
-$$
+<!-- $$
 f(x) = \int_{-\infty}^\infty
     \hat f(\xi)\,e^{2 \pi i \xi x}
     \,d\xi
-$$
+$$ -->
 
 ## Final Thoughts
 

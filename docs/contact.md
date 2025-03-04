@@ -9,7 +9,7 @@ lastUpdated: false
 
 <div class="profile-card">
   <div class="profile-header">
-  <img src="/hero.png" alt="Avatar Allbibek" class="avatar" style="width:200px; border-radius:50%;">
+  <img src="/img/hero.png" alt="Avatar Allbibek" class="avatar" style="width:200px; border-radius:50%;">
     <div class="profile-info">
       <h2>allbibek</h2>
       <p>Senior Software Developer</p>

@@ -6,7 +6,7 @@ hero:
   text: "Develop, Build, and Innovate with Confidence"
   tagline: Dive into a world of coding, creativity, and problem-solving, shared from my journey to yours. Together, let's explore programming, design, and personal growth as we build and innovate.
   image:
-    src: /hero.png
+    src: /img/hero.png
     alt: Allbibek
   actions:
     - theme: brand
@@ -24,7 +24,7 @@ features:
   - icon: 🛠️
     title: Developer Tools
     details: Discover essential tools and utilities that improve your development workflow.
-    link: https://github.com/vuejs/vitepress
+    link: https://github.com/diarboy/wellshit
     linkText: View on GitHub
     rel: external
     target: _blank

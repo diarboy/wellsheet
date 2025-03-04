@@ -3,8 +3,7 @@ layout: page
 ---
 
 <script setup>
-import Parallax from '/components/Parallax.vue';
-import HeroParallax from '/components/HeroParallax.vue';
+import HeroParallax from './.vitepress/theme/components/HeroParallax.vue';
 
 import {
   VPTeamPage,
@@ -84,5 +83,3 @@ const contributors = [
   <!-- Contributors -->
   <VPTeamMembers size="small" :members="contributors" />
 </VPTeamPage>
-
-<Parallax />

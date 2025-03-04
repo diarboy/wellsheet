@@ -7,7 +7,7 @@ hero:
   text: Discover My Visual Journey 
   tagline: A collection of my best works, from photography to digital creations. 
   image:
-    src: /hero2.png
+    src: /img/hero2.png
     alt: gallery
   actions:
     - theme: sponsor
@@ -56,7 +56,7 @@ features:
 
 <script setup>
 
-import HeroParallax from '/components/HeroParallax.vue';
+import HeroParallax from './.vitepress/theme/components/HeroParallax.vue';
 
 </script>
 
