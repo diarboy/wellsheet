@@ -1,23 +1,21 @@
 <script setup>
-import { computed } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useData } from 'vitepress';
 
-// Rata-rata kecepatan membaca (200 kata per menit)
 const wordsPerMinute = 200;
 const { page } = useData();
+const wordCount = ref(0);
+const readingTime = ref("0 menit 0 detik");
 
-// Menghitung jumlah kata dalam artikel
-const wordCount = computed(() => {
-  if (!page.value.content) return 0;
-  return page.value.content.split(/\s+/).filter(word => word.length > 0).length;
-});
-
-// Menghitung waktu baca dalam menit dan detik
-const readingTime = computed(() => {
-  const totalSeconds = (wordCount.value / wordsPerMinute) * 60;
-  const minutes = Math.floor(totalSeconds / 60);
-  const seconds = Math.round(totalSeconds % 60);
-  return `${minutes} menit ${seconds} detik`;
+onMounted(() => {
+  if (page.value.content) {
+    const words = page.value.content.trim().split(/\s+/).length;
+    wordCount.value = words;
+    const totalSeconds = (words / wordsPerMinute) * 60;
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = Math.round(totalSeconds % 60);
+    readingTime.value = `${minutes} menit ${seconds} detik`;
+  }
 });
 </script>
 
