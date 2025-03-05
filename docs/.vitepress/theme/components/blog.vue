@@ -71,15 +71,7 @@ const shareTitle = encodeURIComponent(frontmatter.value.title)
   font-size: 14px;
   color: gray;
 }
-.badge {
-  background: orange;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 5px;
-}
+
 .cover-image {
   width: 100%;
   border-radius: 8px;

@@ -11,7 +11,7 @@
     --vp-home-hero-image-filter: blur(40px);
     --vp-button-brand-bg: #1f9fa2;
     }
-
+    
  /*   .VPNavBarTitle {
       font-family: 'Comfortaa', sans-serif;
       font-size: 1.5rem;
@@ -33,9 +33,9 @@
   } */
 
     .VPHomeHero .name {
-      font-family: 'Comfortaa', sans-serif !important;
+      font-family: 'Manrope', sans-serif;
       font-size: 2.5rem; 
-      font-weight: 600;
+      font-weight: 900;
 	    line-height: 1.5;
       color: white;
   }
@@ -43,7 +43,7 @@
   .VPHomeHero .text {
     font-family: 'Manrope', sans-serif;
     font-size: 3.5rem;
-    font-weight: normal;
+    font-weight: 400;
     letter-spacing: -0.05em;
     line-height: 1;
     color: transparent;
@@ -78,7 +78,7 @@
   div[class*="vp-doc"] h5, 
   div[class*="vp-doc"] h6 {
     font-family: 'Manrope', sans-serif;
-    font-weight: light;
+    font-weight: 900;
   }
 
   /* h1, div[class*="vp-doc"] h1 {

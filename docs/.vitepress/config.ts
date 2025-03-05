@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'wellsheet.',
+  title: 'Wellsheet.',
   description: 'Develop, Build, and Innovate with Confidence',
   base: '/',
 
@@ -30,13 +30,20 @@ export default defineConfig({
 
   themeConfig: {
     lastUpdated: true,
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'short'
+      }
+    },
     logo: '/favicon.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide' },
       { text: 'Gallery', link: '/gallery' },
       {
-        text: 'Blog/Resources',
+        text: 'Resources',
         items: [
           {
             text: 'Internal Link',
@@ -44,6 +51,7 @@ export default defineConfig({
               { text: 'Blog', link: '/blog/introduction' },
               { text: 'PDF', link: '/blog/pdfmake' },
               { text: 'Teams', link: '/team' },
+              { text: 'Teammate', link: '/blog/teammate' },
               { text: '404', link: '/resources/internal/' },
             ],
           },
@@ -79,8 +87,8 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Introduction', link: '/blog/introduction' },
+          { text: 'Blog Tester', link: '/blog/blogtester.md' },
           { text: 'MyFirst Post', link: '/blog/my-first-post' },
-          { text: 'Test', link: '/blog/test.md' },
         ],
       },
     ],

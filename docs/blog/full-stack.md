@@ -1,24 +1,25 @@
-# Building a Full-Stack Website: Front-End & Back-End
+# 🏗️ Building a Full-Stack Website: Front-End & Back-End
 
 In this article, we will walk you through the process of building a full-stack website, covering the front-end and back-end aspects of the project. We will start by designing the project structure, moving on to normalizing the database, setting up Supabase for backend services, and then exploring the frameworks and tools used for building both the front-end and back-end.
 
-## Table of Contents
+## 📑 Table of Contents
 
-1. [Project Structure](#project-structure)
-2. [Database Design with Supabase](#database-design-with-supabase)
-3. [Front-End Development with Vue.js](#front-end-development-with-vuejs)
-4. [User Authentication with API](#user-authentication-with-api)
-6. [Back-End Development with Node.js](#back-end-development-with-nodejs)
-7. [Handling Forms, CRUD, and Dashboard](#handling-forms-crud-and-dashboard)
-8. [Conclusion](#conclusion)
+1. [📂 Project Structure](#project-structure)
+2. [🗄️ Database Design with Supabase](#database-design-with-supabase)
+3. [🎨 Front-End Development with Vue.js](#front-end-development-with-vuejs)
+4. [🔐 User Authentication with API](#user-authentication-with-api)
+5. [🖥️ Back-End Development with Node.js](#back-end-development-with-nodejs)
+6. [📝 Handling Forms, CRUD, and Dashboard](#handling-forms-crud-and-dashboard)
+7. [🏁 Conclusion](#conclusion)
+
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 Before we dive into the technical details, let's first create the structure of the project. A typical full-stack application consists of both a front-end and a back-end. We'll organize the project with separate directories for each.
 
-### Directory Structure
+### 📁 Directory Structure
 
 ```
 my-project/
@@ -32,9 +33,9 @@ my-project/
 └── README.md
 ```
 
-## Database Design with Supabase
+## 🗄️ Database Design with Supabase
 
-### What is Supabase?
+### ❓ What is Supabase?
 
 **Supabase** is an open-source backend-as-a-service (BaaS) platform that offers powerful tools to create a backend for your application. Supabase provides a PostgreSQL database, authentication, storage, and real-time subscriptions—all with minimal setup required. It's an ideal choice for building and deploying modern web applications.
 
@@ -80,7 +81,7 @@ my-project/
 
 ---
 
-### Controlling Row-Level Security (RLS)
+### 🔒 Controlling Row-Level Security (RLS)
 
 Row-Level Security (RLS) is a feature in PostgreSQL that enables you to control access to rows in a table based on the current user or other conditions. Supabase allows you to enable and manage RLS directly from the Supabase dashboard.
 
@@ -128,11 +129,11 @@ To enable RLS, you need to follow these steps:
 
 ---
 
-### Authentication with Supabase
+### 🔐 Authentication with Supabase
 
 Supabase offers built-in authentication to manage users. It includes email/password authentication, social login providers, and JWT (JSON Web Token) for session management.
 
-#### Steps to Enable Authentication
+#### 🖥️ Steps to Enable Authentication
 
 1. **Set Up Authentication in Supabase**  
    In the Supabase dashboard, go to the "Authentication" section and enable email/password signups. You can also enable social logins (Google, GitHub, etc.) if you prefer.
@@ -166,7 +167,7 @@ Supabase offers built-in authentication to manage users. It includes email/passw
 
 ---
 
-### Other Key Supabase Features
+### 📝 Other Key Supabase Features
 
 1. **Real-Time Database with Supabase**  
    Supabase offers real-time capabilities built into PostgreSQL. You can subscribe to changes in your database and receive updates without refreshing the page. This is great for applications that need real-time data, like chat apps or collaborative tools.
@@ -207,11 +208,11 @@ By combining the database design, authentication, and security features in Supab
 
 ---
 
-## Front-End Development with Vue.js
+## 🎨 Front-End Development with Vue.js
 
 For the front-end, we will use **Vue.js**, a popular JavaScript framework. Vue.js is known for its simplicity and flexibility, which makes it an ideal choice for building interactive UIs.
 
-### Steps to Set Up Vue.js:
+### 🚀 Steps to Set Up Vue.js:
 
 1. Initialize a new Vue.js project using Vite:
    
@@ -253,15 +254,15 @@ function handleLogin() {
 
 ---
 
-## User Authentication with API
+## 🔐 User Authentication with API
 
 We will use a REST API to handle the user login and registration process. Our back-end server will expose endpoints for authentication and managing user data.
 
-### API Endpoints for Authentication:
+### 🔐 API Endpoints for Authentication:
 1. **POST `/api/register`**: Register a new user.
 2. **POST `/api/login`**: Authenticate a user.
 
-### Example Code for Login API:
+### 🖥️ Example Code for Login API:
 
 ```js
 // server/routes/auth.js
@@ -299,11 +300,11 @@ module.exports = router;
 
 ---
 
-## Back-End Development with Node.js
+## 🆕 Back-End Development with Node.js
 
 For the back-end, we will use **Node.js** with the **Express** framework. This setup will allow us to create RESTful APIs for user authentication, CRUD operations, and dashboard management.
 
-### Setting Up Node.js:
+### 📊 Setting Up Node.js:
 1. Initialize a new Node.js project:
    ```bash
    mkdir server
@@ -316,11 +317,11 @@ For the back-end, we will use **Node.js** with the **Express** framework. This s
 
 ---
 
-## Handling Forms, CRUD, and Dashboard
+## 📝 Handling Forms, CRUD, and Dashboard
 
 In this section, we will implement the logic for handling user input forms, performing CRUD operations, and creating a user dashboard.
 
-### Handling Forms and CRUD Operations:
+### 📂 Handling Forms and CRUD Operations:
 
 In the front-end, we will create forms for users to submit data such as creating new posts. These forms will send HTTP requests to our back-end APIs.
 
