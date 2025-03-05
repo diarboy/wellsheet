@@ -80,6 +80,7 @@ export default defineConfig({
         items: [
           { text: 'Introduction', link: '/blog/introduction' },
           { text: 'MyFirst Post', link: '/blog/my-first-post' },
+          { text: 'Test', link: '/blog/test.md' },
         ],
       },
     ],
