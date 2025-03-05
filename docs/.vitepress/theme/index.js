@@ -9,6 +9,9 @@ import Blog from './components/blog.vue';
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
+
+    DefaultTheme.enhanceApp?.({ app });
+
     app.component('FAQ', FAQ);
     app.component('PinterestEmbed', PinterestEmbed);
     app.component('GalleryMasonry', GalleryMasonry);
