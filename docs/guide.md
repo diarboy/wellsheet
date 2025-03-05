@@ -1,5 +1,11 @@
 # Welcome to Wellsheet.
 
+### Judul <Badge type="info" text="default" />
+### Judul <Badge type="tip" text="^1.9.0" />
+### Judul <Badge type="warning" text="beta" />
+### Judul <Badge type="danger" text="caution" />
+
+
 Hi there 👋 Welcome to our documentation site! Let's explore some of the amazing features that VitePress offers.
 
 ## Getting Started

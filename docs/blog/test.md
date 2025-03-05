@@ -6,11 +6,12 @@ title: Judul Artikel
 import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 </script>
 
-# {{ $frontmatter.title }}
+# {{ $frontmatter.title }} 
 
 <ReadingTime />
 
 ## Subjudul 1
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ### Sub-subjudul 1.1
@@ -121,4 +122,5 @@ Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus
 Etiam eget dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique.
 Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 Nunc ac magna. Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis felis.
+
 
