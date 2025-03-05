@@ -3,7 +3,7 @@ title: Judul Artikel
 ---
 
 <script setup>
-import ReadingTime from '../components/ReadingTime.vue';
+import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 </script>
 
 # {{ $frontmatter.title }}
