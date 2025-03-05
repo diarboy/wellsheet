@@ -4,9 +4,14 @@ import GalleryMasonry from './components/GalleryMasonry.vue';
 import GalleryCarousel from './components/GalleryCarousel.vue';
 import pdfmake from './components/pdfmake.vue';
 import FAQ from './components/FAQ.vue';
+import Blog from './layouts/Blog.vue'
 
 export default {
   ...DefaultTheme,
+  layouts: {
+    ...DefaultTheme.layouts,
+    blog: Blog
+  },
   enhanceApp({ app }) {
     app.component('FAQ', FAQ);
   //   app.component('PinterestEmbed', PinterestEmbed);

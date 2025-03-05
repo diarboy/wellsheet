@@ -77,7 +77,10 @@ export default defineConfig({
         text: 'Blog',
         collapsible: true,
         collapsed: false,
-        items: [{ text: 'Introduction', link: '/blog/introduction' }],
+        items: [
+          { text: 'Introduction', link: '/blog/introduction' },
+          { text: 'MyFirst Post', link: '/blog/my-first-post' },
+        ],
       },
     ],
 
