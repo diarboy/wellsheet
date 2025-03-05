@@ -1,27 +1,26 @@
 <script setup>
-import { computed, watch } from 'vue';
-import { useData } from 'vitepress';
+import { ref, onMounted } from 'vue';
 
 const wordsPerMinute = 200;
-const { page } = useData();
+const wordCount = ref(0);
+const readingTime = ref("0 menit 0 detik");
 
-// Debug: Cetak isi halaman di console browser
-watch(() => page.value.content, (newContent) => {
-  console.log("Konten halaman:", newContent);
-});
+onMounted(() => {
+  setTimeout(() => {
+    // Ambil semua teks dari halaman artikel
+    const content = document.querySelector('.VPDoc')?.innerText || "";
 
-// Menghitung jumlah kata
-const wordCount = computed(() => {
-  if (!page.value.content) return 0;
-  return page.value.content.trim().split(/\s+/).length;
-});
+    console.log("Konten halaman (dari DOM):", content); // Debugging log
 
-// Menghitung waktu baca
-const readingTime = computed(() => {
-  const totalSeconds = (wordCount.value / wordsPerMinute) * 60;
-  const minutes = Math.floor(totalSeconds / 60);
-  const seconds = Math.round(totalSeconds % 60);
-  return `${minutes} menit ${seconds} detik`;
+    if (content) {
+      const words = content.trim().split(/\s+/).length;
+      wordCount.value = words;
+      const totalSeconds = (words / wordsPerMinute) * 60;
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = Math.round(totalSeconds % 60);
+      readingTime.value = `${minutes} menit ${seconds} detik`;
+    }
+  }, 500); // Tunggu 500ms agar DOM selesai dimuat
 });
 </script>
 

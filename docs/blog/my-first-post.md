@@ -11,8 +11,6 @@ layout: page
 
 <Blog>
 
-<!-- Konten markdown yang ingin ditampilkan sebagai isi artikel -->
-
 # Mengenal VitePress untuk Dokumentasi  
 
 VitePress adalah generator situs statis berbasis Vite yang ringan dan dioptimalkan untuk dokumentasi teknis.  
