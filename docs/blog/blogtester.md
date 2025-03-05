@@ -12,45 +12,74 @@ import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 
 <ReadingTime />
 ![VitePress Logo](/img/hero.png){style="width:300px; height:auto;"}
-<p align="center">
-  <img src="/img/hero3.png" alt="VitePress Logo" width="300">
+
+Jangan Banyak Tanya! Ikuti Saja!
+Begini Cara Bertahan di Indonesia.
+
+## Manut Saja
+
+Menjadi orang yang `iya-iya saja` di Indonesia jauh lebih mudah. Percaya pada ilmu pengetahuan bukan hanya sulit, tapi juga bisa menjadi beban. Di sini, mempertanyakan sesuatu berarti mengancam keteraturan. Berpikir kritis bisa membuatmu dijauhi, dicap sok tahu, atau bahkan dianggap tidak menghormati tradisi dan otoritas.
+
+Negara ini birokratis hingga ke akar-akarnya. Jabatan berarti Kuasa, Kuasa berarti Kehormatan, dan kita dipaksa menelannya mentah-mentah demi hidup `normal`.
+
+<p align="center"> <img src="/img/hero3.png" alt="VitePress Logo" width="300">
 </p>
+
+### Yang ironisnya lagi
+
+Banyak orang setuju bahwa <mark>Pendidikan itu penting</mark>. Namun, ketika pendidikan menghasilkan individu yang berpikir kritis dan berani berbeda, reaksi yang diterima sering kali seperti ini:</p>
+  </div>
+</div>
+
+> 🙎🏻‍♀️ <span class="title">"Wah, sudah pintar sekarang, jadi sudah nggak butuh nasihat orang tua?"</span>
+>
+> 🤷🏻 <span class="title">"Ini realita, mau belajar seperti apa pun, kondisi ini nggak bakal berubah."</span>
+>
+> 🙅🏻‍♂️ <span class="title">"Saya sudah mengalami, kamu masih muda, nggak tahu apa-apa."</span>
+
+## Masa Depan Sudah Digariskan
+
+Di Indonesia, jalan hidup sudah diatur. Tujuan hidup bukan soal passion atau ketenteraman jiwa, melainkan penerimaan sosial. Jangan terlalu banyak berpikir soal idealisme politik, hak kelompok marginal, atau pemberdayaan masyarakat.
 
 <p align="right">
   <img src="/img/hero2.png" alt="VitePress Logo" width="300">
 </p>
 
-## Subjudul 1 
+> ***Cukup berdoa dan bersedekah saja!*** 🧘🏻
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Kita `iya-iya saja` menerima dogma bahwa depresi berarti `Kurang Ibadah`😇. Kita membiarkan anak jalanan tetap di jalanan dengan sekadar memberikan recehan di lampu merah. Kita diam ketika pemerintah menyalahgunakan pajak, tetapi mencemooh buruh yang berdemo menuntut haknya. Kita tak berbuat apa-apa ketika korban kekerasan disalahkan hanya karena pakaiannya mereka dianggap tidak cukup tertutup.
 
-### Sub-subjudul 1.1
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+> _Akibatnya, kebenaran baru bisa ditegakkan setelah **viral** saja._
 
-## Subjudul 2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+## Krisis Nalar
 
-### Sub-subjudul 2.1
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+Menjadi seseorang yang percaya pada ilmu pengetahuan di negeri ini berarti siap menanggung beban kesepian. Karena orang-orang akan mempertanyakan dan meragukanmu. Mereka akan menganggapmu aneh karena lebih memilih fakta daripada tradisi, lebih memilih logika daripada mitos, lebih memilih jadi skeptis daripada tunduk.
 
-### Sub-subjudul 2.2
-Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+Tan Malaka menyebut logika mistika sebagai tradisi berpikir feodal, warisan sistem yang menjauhkan masyarakat dari sikap kritis. Feodalisme menempatkan kuasa dan pengetahuan di tangan segelintir orang, sementara rakyat hanya bisa tunduk, pasif, dan mudah dikendalikan.
 
-## Subjudul 3
-Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.
+<!-- <div style="display: flex; align-items: center; gap: 15px; flex-direction: row;">
+  <img src="https://i.pinimg.com/736x/a3/67/89/a36789b269d3ddc150939a31b3a390dd.jpg" alt="Ilustrasi" style="width: 200px; height: auto; border-radius: 5%;">
+  <div style="text-align: left;">
+    <h5 style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;">Normalisasi Ketidaknormalan</h5>
+    <em style="font-size: 1em;">Welcome To Intonesia.</em>
+  </div>
+</div> -->
 
-### Sub-subjudul 3.1
-Omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
-Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla.
-Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien. Donec ut est in lectus consequat consequat.
-Etiam eget dui. Aliquam erat volutpat. Sed at lorem in nunc porta tristique.
-Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-Nunc ac magna. Maecenas odio dolor, vulputate vel, auctor ac, accumsan id, felis. Pellentesque cursus sagittis felis.
-Pellentesque porttitor, velit lacinia egestas auctor, diam eros tempus arcu, nec vulputate augue magna vel risus. Cras non magna vel ante adipiscing rhoncus. Vivamus a mi.
+## Revolusi Berpikir
+<!--
+<PinterestEmbed pinUrl="https://www.pinterest.com/pin/358810295291571971/" />
+-->
 
+Meskipun telah <span style="background-color: red; padding: 0px 4px;">merdeka</span> dari penjajahan fisik, kita masih terjajah dalam cara berpikir. Kita masih tunduk pada otoritas tanpa mempertanyakan kebenarannya. Kita masih gemar mengandalkan *Orang Pintar*.
 
+Mungkin dukun sudah sedikit, tapi mereka menjelma jadi influencer, abang-abangan, penjual agama, atau semua yang menjual solusi instan untuk menyelesaikan masalah yang bisa diselesaikan dengan skeptisme, logika, dan ilmu pengetahuan.
+
+Jika kita terus pasif dan `iya-iya saja`, maka masyarakat yang terjebak dalam logika mistika akan melahirkan pemerintah dengan cara berpikir serupa. Contohnya? Anggaran riset dan anggaran pendidikan, yang lebih kecil daripada biaya rapat DPR di hotel-hotel. Akademisi dikecilkan karena dianggap <mark>"tidak sesuai realita",</mark> sementara paranormal tetap dipercaya lebih dari ilmu.
+
+**Tapi haruskah kita menyerah?** Tidak. Revolusi berpikir adalah awal dari revolusi yang sesungguhnya. Kita harus terus mempertanyakan, meski lelah. Kita harus terus mencari kebenaran, meski sedikit kesepian.
+
+## Menuju Kebenaran
+
+>Karena satu-satunya jalan untuk benar-benar merdeka adalah membebaskan diri dari belenggu pola pikir yang menekan kita sejak lahir. Dan kebebasan itu harus diperjuangkan. Dengan pikiran, dengan kata-kata, dengan keberanian untuk tidak lagi tunduk.
+>
+<PinterestEmbed pinUrl="https://www.pinterest.com/pin/34832597112243536/" pinSize="medium"/>
