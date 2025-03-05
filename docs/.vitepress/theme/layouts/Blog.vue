@@ -11,8 +11,8 @@ const estimatedReadingTime = computed(() => {
   return Math.ceil(words / wordsPerMinute)
 })
 
-// URL untuk share
-const shareUrl = encodeURIComponent(window.location.href)
+// URL untuk share (dengan pengecekan agar tidak error saat SSR)
+const shareUrl = typeof window !== 'undefined' ? encodeURIComponent(window.location.href) : ''
 const shareTitle = encodeURIComponent(frontmatter.value.title)
 </script>
 
