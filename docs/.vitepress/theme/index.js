@@ -4,6 +4,7 @@ import GalleryMasonry from './components/GalleryMasonry.vue';
 import GalleryCarousel from './components/GalleryCarousel.vue';
 import pdfmake from './components/pdfmake.vue';
 import FAQ from './components/FAQ.vue';
+import Blog from './components/blog.vue';
 
 export default {
   ...DefaultTheme,
@@ -13,5 +14,6 @@ export default {
     app.component('GalleryMasonry', GalleryMasonry);
     app.component('GalleryCarousel', GalleryCarousel);
     app.component('pdfmake', pdfmake);
+    app.component('Blog', Blog);
   },
 };

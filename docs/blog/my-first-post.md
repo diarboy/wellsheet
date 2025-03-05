@@ -3,13 +3,14 @@ title: "Mengenal VitePress untuk Dokumentasi"
 description: "Pelajari cara menggunakan VitePress untuk membuat dokumentasi yang ringan, cepat, dan mudah dikustomisasi."
 author: "Diarboy"
 date: "2025-03-05"
-image: "/img/vitepress-cover.png"
+image: "/img/hero3.png"
 tags: ["VitePress", "Documentation", "Frontend"]
 badge: "Beta"
-lang: "id-ID"
-layout: blog
+layout: page
 ---
 
+<Blog>
+<!-- Konten markdown yang ingin ditampilkan sebagai isi artikel -->
 # Mengenal VitePress untuk Dokumentasi  
 
 VitePress adalah generator situs statis berbasis Vite yang ringan dan dioptimalkan untuk dokumentasi teknis.  
@@ -25,7 +26,6 @@ VitePress adalah generator situs statis berbasis Vite yang ringan dan dioptimalk
 1. Install dengan `npm create vitepress@latest`.
 2. Buat file `index.md` sebagai halaman utama.
 3. Jalankan server dengan `npm run dev`.
-
----
+</Blog>
 
 _Artikel oleh **Diarboy**, dipublikasikan pada **5 Maret 2025**._
