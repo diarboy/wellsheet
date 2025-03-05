@@ -1,50 +1,38 @@
 <script setup>
 import { useData } from 'vitepress'
-import { computed, onMounted, ref } from 'vue'
+import { computed } from 'vue'
 
-// Mengambil data dari VitePress
-const { frontmatter } = useData()
+// Mengambil data frontmatter dan konten halaman dari VitePress
+const { frontmatter, page } = useData()
 
-// Estimasi waktu baca dalam menit & detik
-const readingTime = ref({ minutes: 0, seconds: 0 })
-
-onMounted(() => {
-  const content = document.querySelector('.VPContent')?.innerText || ''
-  const wordCount = content.split(/\s+/).length
-
+// Menghitung estimasi waktu baca berdasarkan 250 kata per menit
+const estimatedReadingTime = computed(() => {
   const wordsPerMinute = 250
-  const totalMinutes = wordCount / wordsPerMinute
-  const minutes = Math.floor(totalMinutes)
-  const seconds = Math.round((totalMinutes - minutes) * 60)
-
-  readingTime.value = { minutes, seconds }
+  const words = page.value.content?.split(/\s+/).length || 0
+  return Math.ceil(words / wordsPerMinute)
 })
 
-// Membuat URL share yang valid
-const shareUrl = computed(() =>
-  typeof window !== 'undefined' ? encodeURIComponent(window.location.href) : ''
-)
-const shareTitle = computed(() => encodeURIComponent(frontmatter.value.title || ''))
+// URL untuk share (dengan pengecekan agar tidak error saat SSR)
+const shareUrl = typeof window !== 'undefined'
+  ? encodeURIComponent(window.location.href)
+  : ''
+const shareTitle = encodeURIComponent(frontmatter.value.title)
 </script>
 
 <template>
-  <article class="blog">
-    <!-- Judul Artikel -->
+  <div class="blog-component">
     <h1>{{ frontmatter.title }}</h1>
-
-    <!-- Informasi Metadata -->
+    
     <div class="meta">
-      <span>📅 {{ frontmatter.date }}</span> |
-      <span>✍️ {{ frontmatter.author }}</span> |
-      <span>⏳ {{ readingTime.minutes }} min {{ readingTime.seconds }} sec read</span>
+      <span>📅 {{ frontmatter.date }}</span> |  
+      <span>✍️ {{ frontmatter.author }}</span> |  
+      <span>⏳ {{ estimatedReadingTime }} min read</span>
     </div>
 
-    <!-- Badge (opsional) -->
     <div v-if="frontmatter.badge" class="badge">
       {{ frontmatter.badge }}
     </div>
 
-    <!-- Gambar Cover (opsional) -->
     <img
       v-if="frontmatter.image"
       :src="frontmatter.image"
@@ -52,66 +40,37 @@ const shareTitle = computed(() => encodeURIComponent(frontmatter.value.title || 
       class="cover-image"
     />
 
-    <!-- Deskripsi Artikel -->
     <p class="description">{{ frontmatter.description }}</p>
 
-    <!-- Tag Artikel -->
-    <div v-if="frontmatter.tags" class="tags">
+    <div class="tags">
       <span v-for="tag in frontmatter.tags" :key="tag" class="tag">#{{ tag }}</span>
     </div>
 
-    <!-- Konten Markdown -->
-    <Content />
+    <!-- Menampilkan konten markdown -->
+    <slot />
 
-    <!-- Share Section -->
     <div class="share">
       <p>Bagikan artikel ini:</p>
-      <a
-        :href="`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`"
-        target="_blank"
-        aria-label="Bagikan ke Facebook"
-      >
-        Facebook
-      </a>
-      <a
-        :href="`https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}`"
-        target="_blank"
-        aria-label="Bagikan ke Twitter"
-      >
-        Twitter
-      </a>
-      <a
-        :href="`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${shareTitle}`"
-        target="_blank"
-        aria-label="Bagikan ke LinkedIn"
-      >
-        LinkedIn
-      </a>
-      <button
-        @click="navigator.clipboard.writeText(window.location.href)"
-        aria-label="Salin tautan"
-      >
+      <a :href="`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`" target="_blank">Facebook</a>
+      <a :href="`https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}`" target="_blank">Twitter</a>
+      <a :href="`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${shareTitle}`" target="_blank">LinkedIn</a>
+      <button @click="navigator.clipboard.writeText(window.location.href)">
         Copy Link
       </button>
     </div>
-  </article>
+  </div>
 </template>
 
 <style scoped>
-.blog {
+.blog-component {
   max-width: 800px;
   margin: auto;
   padding: 20px;
 }
-
-/* Metadata */
 .meta {
   font-size: 14px;
   color: gray;
-  margin-bottom: 10px;
 }
-
-/* Badge */
 .badge {
   background: orange;
   color: white;
@@ -119,24 +78,17 @@ const shareTitle = computed(() => encodeURIComponent(frontmatter.value.title || 
   border-radius: 4px;
   font-weight: bold;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-top: 5px;
 }
-
-/* Cover Image */
 .cover-image {
   width: 100%;
   border-radius: 8px;
   margin: 20px 0;
 }
-
-/* Deskripsi */
 .description {
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 20px;
 }
-
-/* Tags */
 .tags {
   margin-top: 10px;
 }
@@ -147,17 +99,15 @@ const shareTitle = computed(() => encodeURIComponent(frontmatter.value.title || 
   margin-right: 5px;
   font-size: 14px;
 }
-
-/* Share Section */
 .share {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .share a, .share button {
   margin-right: 10px;
   text-decoration: none;
   background: #0073e6;
   color: white;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 5px;
   display: inline-block;
   font-size: 14px;
@@ -165,18 +115,5 @@ const shareTitle = computed(() => encodeURIComponent(frontmatter.value.title || 
 .share button {
   border: none;
   cursor: pointer;
-}
-
-/* Gunakan CSS bawaan untuk Markdown */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-p {
-  line-height: 1.6;
-}
-
-a {
-  color: #0073e6;
 }
 </style>
