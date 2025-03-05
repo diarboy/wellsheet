@@ -68,7 +68,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Getting Started', link: '/guide' },
-          { text: 'Tutorials', link: '/tutorials' },
+          { text: 'Tutorials', link: '/blog/tutorials' },
           { text: 'Full-Stack Website', link: '/blog/full-stack' },
           { text: 'Dasar Regex', link: '/blog/regex' },
         ],
