@@ -1,10 +1,10 @@
 ---
 layout: home
----
 
-  name: "wellsheet."
-  text: "Develop, Build, and Innovate with Confidence"
-  tagline: Dive into a world of coding, creativity, and problem-solving, shared from my journey to yours. Together, let's explore programming, design, and personal growth as we build and innovate.
+hero:
+  name: "Playground"
+  text: "A space to explore, test, and refine your code."
+  tagline: Experiment, create, and refine interactive functions effortlessly. Explore coding, creativity, and problem-solving in a hands-on environment designed for learning and innovation.
   image:
     src: /img/hero3.png
     alt: wellshit
@@ -15,5 +15,7 @@ layout: home
     - theme: alt
       text: Contact
       link: /contact
-      
+
+---
+
 <pdfmake />
