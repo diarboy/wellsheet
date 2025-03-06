@@ -11,6 +11,7 @@ import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 # {{ $frontmatter.title }} <Badge type="info" text="blog" /><Badge type="tip" text="^1.6.3" /><Badge type="warning" text="beta" />
 
 <ReadingTime />
+
 ![VitePress Logo](/img/hero.png){style="width:300px; height:auto;"}
 
 Jangan Banyak Tanya! Ikuti Saja!
@@ -27,9 +28,7 @@ Negara ini birokratis hingga ke akar-akarnya. Jabatan berarti Kuasa, Kuasa berar
 
 ### Yang ironisnya lagi
 
-Banyak orang setuju bahwa <mark>Pendidikan itu penting</mark>. Namun, ketika pendidikan menghasilkan individu yang berpikir kritis dan berani berbeda, reaksi yang diterima sering kali seperti ini:</p>
-  </div>
-</div>
+Banyak orang setuju bahwa <mark>Pendidikan itu penting</mark>. Namun, ketika pendidikan menghasilkan individu yang berpikir kritis dan berani berbeda, reaksi yang diterima sering kali seperti ini:
 
 > 🙎🏻‍♀️ <span class="title">"Wah, sudah pintar sekarang, jadi sudah nggak butuh nasihat orang tua?"</span>
 >
