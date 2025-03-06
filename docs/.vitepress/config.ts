@@ -29,7 +29,6 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    lastUpdated: true,
     lastUpdated: {
       text: 'Updated at',
       formatOptions: {
