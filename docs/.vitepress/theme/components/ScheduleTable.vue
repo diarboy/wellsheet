@@ -264,9 +264,9 @@ const filteredData = computed(() => {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
 }
 @media (max-width: 768px) {
-  :body-text-direction="left"
   .custom-table th,
   .custom-table td {
+    text-align: left !important;
     padding: 0.5rem;
     font-size: 0.8rem;
   }
