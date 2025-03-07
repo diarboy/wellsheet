@@ -172,4 +172,10 @@
 	    gap: 50px;
     }
   }
+
+  .show-sidebar .VPNav {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
   
