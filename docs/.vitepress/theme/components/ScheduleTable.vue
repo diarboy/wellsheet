@@ -216,7 +216,6 @@ const filteredData = computed(() => {
   text-align: right !important;
 }
 
-/* Custom pagination */
 .custom-pagination {
   margin: 1rem 0;
   display: flex;
@@ -244,9 +243,9 @@ const filteredData = computed(() => {
 }
 
 .expand-content p {
-  margin: 5px; /* Mengatur margin menjadi 0 */
-  font-size: 0.95rem; /* Opsional: Menyesuaikan ukuran font */
-  line-height: 1.5; /* Opsional: Menyesuaikan jarak antar baris */
+  margin: 5px; 
+  font-size: 0.95rem; 
+  line-height: 1.5; 
 }
 
 /* Custom style untuk input pencarian */
