@@ -64,8 +64,8 @@ const search = ref('')
 // Header tabel dengan alignment
 const headers = [
   { text: 'Hari', value: 'hari', sortable: true },
-  { text: 'Waktu', value: 'waktu', width: 120, align: 'right' },
-  { text: 'Mata Kuliah', value: 'mataKuliah', width: 350, align: 'right' },
+  { text: 'Waktu', value: 'waktu', width: 120 },
+  { text: 'Mata Kuliah', value: 'mataKuliah', width: 350 },
   { text: 'Kode', value: 'kode' },
   { text: 'Dosen', value: 'dosen', sortable: true },
 ]
@@ -263,5 +263,11 @@ const filteredData = computed(() => {
   border-color: #2563eb;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
 }
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
 
 </style>
