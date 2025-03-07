@@ -29,10 +29,12 @@
       <!-- Slot expandable row -->
       <template #expand="item">
         <div class="expand-content">
-            <p><strong>Keterangan:</strong> {{ item.keterangan || '-' }}</p>
+            <p><strong>Keterangan:</strong></p>
             <p><strong>Sipen:</strong></p>
             <p><span v-html="splitValues(item.sipen)"></span></p>
-            <p><strong>Ruangan:</strong> {{ item.ruangan || 'TBA' }}</p>
+            <p>{{ item.keterangan || '-' }}</p>
+            <p><strong>Ruangan:</strong></p>
+            <p>{{ item.ruangan || 'TBA' }}</p>
           
         </div>
       </template>
