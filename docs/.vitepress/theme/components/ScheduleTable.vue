@@ -30,7 +30,8 @@
       <template #expand="item">
         <div class="expand-content">
             <p><strong>Keterangan:</strong> {{ item.keterangan || '-' }}</p>
-            <p><strong>Sipen:</strong> <span v-html="splitValues(item.sipen)"></span></p>
+            <p><strong>Sipen:</strong></p>
+            <p><span v-html="splitValues(item.sipen)"></span></p>
             <p><strong>Ruangan:</strong> {{ item.ruangan || 'TBA' }}</p>
           
         </div>
