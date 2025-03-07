@@ -79,7 +79,7 @@ const data = ref([
     mataKuliah: 'Pemasaran Digital (2T)',
     dosen: 'Hendri Rosmawan, M.Kom.',
     sipen: '(1) Muhammad Rizki, (2) Sabili Muhammad Azka',
-    keterangan: 'Kelas reguler',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Lab 3'
   },
   {
@@ -89,7 +89,7 @@ const data = ref([
     mataKuliah: 'Manajemen Sistem Informasi Kesehatan (2T)',
     dosen: 'Dr. Andinna Ananda Yusuff, MM.',
     sipen: '(1) Aurelia Septia Apriani, (2) Dimas Surya Putra',
-    keterangan: 'Kelas bilingual',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Ruang 405'
   },
   {
@@ -99,7 +99,7 @@ const data = ref([
     mataKuliah: 'Manajemen Sains dan Riset Operasional (2T1P)',
     dosen: 'Dr. Indra Surya Permana, M.M., M.Kom.',
     sipen: '(1) Fasya Mahesa, (2) MS. Ardi',
-    keterangan: 'Kelas advance',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Lab 2'
   },
   {
@@ -109,7 +109,7 @@ const data = ref([
     mataKuliah: 'Pemrograman Mobile 1 (2T1P)',
     dosen: 'Moh Firdaus, M.Kom',
     sipen: 'Muhammad Labbiibul Muhsin',
-    keterangan: 'Kelas proyek',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Studio 3'
   },
   {
@@ -119,7 +119,7 @@ const data = ref([
     mataKuliah: 'Pembelajaran Mesin (2T1P)',
     dosen: 'Ahmad Ngiliyun, M.Kom.',
     sipen: 'Jaisyi Bagir Rafsyahid',
-    keterangan: 'Kelas intensif',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Lab AI'
   },
   {
@@ -129,7 +129,7 @@ const data = ref([
     mataKuliah: 'Keamanan Data dan Informasi (2T1P)',
     dosen: 'Moh Firdaus, M.Kom',
     sipen: '(1) Indah Rizkika, (2) Dimas Dwi Rianto',
-    keterangan: 'Kelas khusus',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Ruang Cyber'
   },
   {
@@ -139,7 +139,7 @@ const data = ref([
     mataKuliah: 'Rekayasa Perangkat Lunak (2T1P)',
     dosen: 'Ahmad Ngiliyun, M.Kom.',
     sipen: 'Muhamad Fuad Aziz',
-    keterangan: 'Kelas industri',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Lab DevOps'
   },
   {
@@ -149,7 +149,7 @@ const data = ref([
     mataKuliah: 'Cloud Computing 2 (2T1P)',
     dosen: 'Yassep Azzery, M.T.',
     sipen: 'Ardi Syah',
-    keterangan: 'Kelas weekend',
+    keterangan: 'Kelas Reguler',
     ruangan: 'Cloud Lab'
   }
 ])
