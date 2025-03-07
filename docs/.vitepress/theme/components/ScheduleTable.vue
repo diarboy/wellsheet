@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 schedule-table">
+  <div class="schedule-table">
     <!-- Input pencarian -->
     <input
       v-model="search"
@@ -191,8 +191,8 @@ const filteredData = computed(() => {
 }
 
 /* Custom alignment */
-:deep(.custom-table .easy-table__header__item--index),
-:deep(.custom-table .easy-table__body__row__cell--index) {
+::v-deep(.custom-table .easy-table__header__item--index),
+::v-deep(.custom-table .easy-table__body__row__cell--index) {
   text-align: right !important;
 }
 
@@ -206,13 +206,13 @@ const filteredData = computed(() => {
   text-align: right !important;
 }
 
-:deep(.custom-table .easy-table__header__item--mataKuliah),
-:deep(.custom-table .easy-table__body__row__cell--mataKuliah) {
+::v-deep(.custom-table .easy-table__header__item--mataKuliah),
+::v-deep(.custom-table .easy-table__body__row__cell--mataKuliah) {
   text-align: right !important;
 }
 
-:deep(.custom-table .easy-table__header__item--kode),
-:deep(.custom-table .easy-table__body__row__cell--kode) {
+::v-deep(.custom-table .easy-table__header__item--kode),
+::v-deep(.custom-table .easy-table__body__row__cell--kode) {
   text-align: right !important;
 }
 
@@ -262,15 +262,6 @@ const filteredData = computed(() => {
 .search-input:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
-}
-
-/* Custom footer */
-.custom-footer {
-  padding: 0.75rem;
-  text-align: center;
-  background-color: var(--vp-c-bg);
-  border-top: 1px solid var(--vp-c-border);
-  font-size: 0.8rem;
 }
 
 </style>
