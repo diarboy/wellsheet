@@ -65,9 +65,9 @@ const search = ref('')
 const headers = [
   { text: 'Hari', value: 'hari', sortable: true },
   { text: 'Waktu', value: 'waktu', width: 120 },
-  { text: 'Mata Kuliah', value: 'mataKuliah', width: 350 },
+  { text: 'Mata Kuliah', value: 'mataKuliah', width: 330 },
   { text: 'Kode', value: 'kode' },
-  { text: 'Dosen', value: 'dosen', sortable: true, width: 220 },
+  { text: 'Dosen', value: 'dosen', sortable: true, width: 240 },
 ]
 
 // Data dengan tambahan field untuk expand
@@ -264,6 +264,7 @@ const filteredData = computed(() => {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
 }
 @media (max-width: 768px) {
+  :body-text-direction="left"
   .custom-table th,
   .custom-table td {
     padding: 0.5rem;
