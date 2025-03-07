@@ -5,7 +5,7 @@
       v-model="search"
       type="text"
       placeholder="Cari: (Hari, Mata Kuliah, Dosen, Sipen)"
-      class="search-input mb-4"
+      class="search-input"
     />
 
     <!-- Tabel Data (Vue3 Easy DataTable) -->
@@ -67,7 +67,7 @@ const headers = [
   { text: 'Waktu', value: 'waktu', width: 120 },
   { text: 'Mata Kuliah', value: 'mataKuliah', width: 330 },
   { text: 'Kode', value: 'kode' },
-  { text: 'Dosen', value: 'dosen', sortable: true, width: 240 },
+  { text: 'Dosen', value: 'dosen', sortable: true, width: 250 },
 ]
 
 // Data dengan tambahan field untuk expand
