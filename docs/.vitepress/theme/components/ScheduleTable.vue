@@ -67,7 +67,7 @@ const headers = [
   { text: 'Waktu', value: 'waktu', width: 120 },
   { text: 'Mata Kuliah', value: 'mataKuliah', width: 350 },
   { text: 'Kode', value: 'kode' },
-  { text: 'Dosen', value: 'dosen', sortable: true },
+  { text: 'Dosen', value: 'dosen', sortable: true, width: 220 },
 ]
 
 // Data dengan tambahan field untuk expand
@@ -269,5 +269,5 @@ const filteredData = computed(() => {
     padding: 0.5rem;
     font-size: 0.8rem;
   }
-
+}
 </style>
