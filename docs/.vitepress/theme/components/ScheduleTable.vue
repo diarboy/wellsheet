@@ -4,7 +4,7 @@
     <input
       v-model="search"
       type="text"
-      placeholder="Cari (Hari, Mata Kuliah, Dosen, Sipen)..."
+      placeholder="Cari: (Hari, Mata Kuliah, Dosen, Sipen)"
       class="search-input mb-4"
     />
 
@@ -13,27 +13,40 @@
       :headers="headers"
       :items="filteredData"
       :rows-per-page="10"
-      :hide-footer="true"
-      :sortable="true"
+      :pagination="true"
+      :expand-on-row-click="true"
       header-text-direction="center"
-      border-cell
+      body-text-direction="center"
       show-index
+
       class="custom-table"
     >
       <!-- Slot custom untuk cell 'dosen' -->
       <template #cell-dosen="{ item }">
-        <div v-html="splitValues(item.dosen)"></div>
+        <div class="dosen-cell" v-html="splitValues(item.dosen)" ></div>
       </template>
 
-      <!-- Slot custom untuk cell 'sipen' -->
-      <template #cell-sipen="{ item }">
-        <div v-html="splitValues(item.sipen)"></div>
+      <!-- Slot expandable row -->
+      <template #expand="item">
+        <div class="expand-content">
+            <p><strong>Keterangan:</strong> {{ item.keterangan || '-' }}</p>
+            <p><strong>Sipen:</strong> {{ item.sipen || '-' }}</p>
+            <p><strong>Ruangan:</strong> {{ item.ruangan || 'TBA' }}</p>
+          
+        </div>
       </template>
 
-      <!-- Slot custom untuk footer -->
-      <template #footer>
-        <div class="custom-footer">
-          <span>© 2025 Jadwal Kuliah - All Rights Reserved</span>
+      <!-- Custom pagination -->
+      <template #pagination="props">
+        <div class="custom-pagination">
+          <button 
+            v-for="page in props.totalPages" 
+            :key="page" 
+            @click="props.setPage(page)"
+            :class="{ active: props.currentPage === page }"
+          >
+            {{ page }}
+          </button>
         </div>
       </template>
     </EasyDataTable>
@@ -48,17 +61,16 @@ import 'vue3-easy-data-table/dist/style.css'
 // Input pencarian
 const search = ref('')
 
-// Header tabel (hilangkan "Class")
+// Header tabel dengan alignment
 const headers = [
   { text: 'Hari', value: 'hari', sortable: true },
-  { text: 'Waktu', value: 'waktu', width: 120 },
-  { text: 'Mata Kuliah', value: 'mataKuliah' },
+  { text: 'Waktu', value: 'waktu', width: 120, align: 'right' },
+  { text: 'Mata Kuliah', value: 'mataKuliah', width: 350, align: 'right' },
   { text: 'Kode', value: 'kode' },
   { text: 'Dosen', value: 'dosen', sortable: true },
-  { text: 'Sipen', value: 'sipen' }
 ]
 
-// Data mentah (hari dalam Bahasa Indonesia)
+// Data dengan tambahan field untuk expand
 const data = ref([
   {
     hari: 'Senin',
@@ -66,7 +78,9 @@ const data = ref([
     kode: 'MK47',
     mataKuliah: 'Pemasaran Digital (2T)',
     dosen: 'Ade Sutriyono, MM.SI. dan Hendri Rosmawan, M.Kom.',
-    sipen: ''
+    sipen: '(1) Muhammad Rizki, (2) Sabili Muhammad Azka',
+    keterangan: 'Kelas reguler',
+    ruangan: 'Lab 3'
   },
   {
     hari: 'Selasa',
@@ -74,7 +88,9 @@ const data = ref([
     kode: 'MK45',
     mataKuliah: 'Manajemen Sistem Informasi Kesehatan (2T)',
     dosen: 'Fardhoni, ST., MM., M.Kom. dan Dr. Andinna Ananda Yusuff, MM.',
-    sipen: ''
+    sipen: '(1) Aurelia Septia Apriani, (2) Dimas Surya Putra',
+    keterangan: 'Kelas bilingual',
+    ruangan: 'Ruang 405'
   },
   {
     hari: 'Rabu',
@@ -82,7 +98,9 @@ const data = ref([
     kode: 'MK46',
     mataKuliah: 'Manajemen Sains dan Riset Operasional (2T1P)',
     dosen: 'Dr. Indra Surya Permana, M.M., M.Kom.',
-    sipen: ''
+    sipen: '(1) Fasya Mahesa, (2) MS. Ardi',
+    keterangan: 'Kelas advance',
+    ruangan: 'Lab 2'
   },
   {
     hari: 'Rabu',
@@ -90,15 +108,19 @@ const data = ref([
     kode: 'MK28',
     mataKuliah: 'Pemrograman Mobile 1 (2T1P)',
     dosen: 'Moh Firdaus, M.Kom',
-    sipen: ''
+    sipen: 'Muhammad Labbiibul Muhsin',
+    keterangan: 'Kelas proyek',
+    ruangan: 'Studio 3'
   },
   {
     hari: 'Kamis',
     waktu: '08:00 – 10:30',
     kode: 'MK11',
     mataKuliah: 'Pembelajaran Mesin (2T1P)',
-    dosen: 'Ade Sutriyono, MM.SI.',
-    sipen: 'Ahmad Ngiliyun, M.Kom.'
+    dosen: 'Ade Sutriyono, MM.SI. & Ahmad Ngiliyun, M.Kom.',
+    sipen: 'Jaisyi Bagir Rafsyahid',
+    keterangan: 'Kelas intensif',
+    ruangan: 'Lab AI'
   },
   {
     hari: 'Kamis',
@@ -106,15 +128,19 @@ const data = ref([
     kode: 'MK07',
     mataKuliah: 'Keamanan Data dan Informasi (2T1P)',
     dosen: 'Moh Firdaus, M.Kom',
-    sipen: ''
+    sipen: '(1) Indah Rizkika, (2) Dimas Dwi Rianto',
+    keterangan: 'Kelas khusus',
+    ruangan: 'Ruang Cyber'
   },
   {
     hari: 'Kamis',
     waktu: '13:00 – 15:30',
     kode: 'MK08',
     mataKuliah: 'Rekayasa Perangkat Lunak (2T1P)',
-    dosen: 'Syaeful Ramadhan, M.Kom.',
-    sipen: 'Ahmad Ngiliyun, M.Kom.'
+    dosen: 'Syaeful Ramadhan, M.Kom. & Ahmad Ngiliyun, M.Kom.',
+    sipen: 'Muhamad Fuad Aziz',
+    keterangan: 'Kelas industri',
+    ruangan: 'Lab DevOps'
   },
   {
     hari: 'Sabtu',
@@ -122,28 +148,25 @@ const data = ref([
     kode: 'IF34PR',
     mataKuliah: 'Cloud Computing 2 (2T1P)',
     dosen: 'Yassep Azzery, M.T.',
-    sipen: ''
+    sipen: 'Ardi Syah',
+    keterangan: 'Kelas weekend',
+    ruangan: 'Cloud Lab'
   }
 ])
 
-// Fungsi untuk memisahkan nilai berdasarkan kata "dan"
 const splitValues = (value) => {
   if (!value) return ''
   return value.split(' dan ').join('<br>')
 }
 
-// Filter data berdasarkan pencarian di beberapa kolom
 const filteredData = computed(() => {
   if (!search.value) return data.value
-  return data.value.filter(item => {
-    const searchLower = search.value.toLowerCase()
-    return (
-      item.hari.toLowerCase().includes(searchLower) ||
-      item.mataKuliah.toLowerCase().includes(searchLower) ||
-      item.dosen.toLowerCase().includes(searchLower) ||
-      item.sipen.toLowerCase().includes(searchLower)
+  const searchLower = search.value.toLowerCase()
+  return data.value.filter(item => 
+    Object.values(item).some(val => 
+      String(val).toLowerCase().includes(searchLower)
     )
-  })
+  )
 })
 </script>
 
@@ -151,14 +174,86 @@ const filteredData = computed(() => {
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
 
 .schedule-table {
-    --easy-table-header-item-padding: 10px 15px;
+  --easy-table-header-background-color: #2d3a4f;
+  --easy-table-header-font-color: #fff;
+  --easy-table-body-row-text-align: right;
+  --easy-table-body-row-index-text-align: right;
+  --easy-table-body-row-cell-dosen-text-align: right;
+  --easy-table-body-row-cell-sipen-text-align: right;
+  --easy-table-footer-background-color: #f5f5f5;
+  --easy-table-footer-font-color: #666;
+}
+
+.custom-table {
+  border: 1px solid var(--vp-c-border);
+  border-collapse: collapse;
   font-family: 'Manrope', sans-serif;
+}
+
+/* Custom alignment */
+:deep(.custom-table .easy-table__header__item--index),
+:deep(.custom-table .easy-table__body__row__cell--index) {
+  text-align: right !important;
+}
+
+::v-deep(.custom-table .easy-table__header__item--hari),
+::v-deep(.custom-table .easy-table__body__row__cell--hari) {
+  text-align: right !important;
+}
+
+::v-deep(.custom-table .easy-table__header__item--waktu),
+::v-deep(.custom-table .easy-table__body__row__cell--waktu) {
+  text-align: right !important;
+}
+
+:deep(.custom-table .easy-table__header__item--mataKuliah),
+:deep(.custom-table .easy-table__body__row__cell--mataKuliah) {
+  text-align: right !important;
+}
+
+:deep(.custom-table .easy-table__header__item--kode),
+:deep(.custom-table .easy-table__body__row__cell--kode) {
+  text-align: right !important;
+}
+
+/* Custom pagination */
+.custom-pagination {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.custom-pagination button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.custom-pagination button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Expand content styling */
+.expand-content {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.expand-content p {
+  margin: 5px; /* Mengatur margin menjadi 0 */
+  font-size: 0.95rem; /* Opsional: Menyesuaikan ukuran font */
+  line-height: 1.5; /* Opsional: Menyesuaikan jarak antar baris */
 }
 
 /* Custom style untuk input pencarian */
 .search-input {
-  width: 100%;
+  width:300px;
   padding: 0.75rem;
+  margin: 20px 0 20px 0;
   border: 1px solid var(--vp-c-border);
   border-radius: 0.5rem;
   box-shadow: var(--vp-shadow);
@@ -170,29 +265,6 @@ const filteredData = computed(() => {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
 }
 
-/* Custom style untuk tabel */
-.custom-table {
-  border: 1px solid var(--vp-c-border);
-  border-collapse: collapse;
-}
-.custom-table th,
-.custom-table td {
-  border: 1px solid var(--vp-c-border);
-  padding: 0.75rem;
-  text-align: center;
-  font-size: 0.9rem;
-}
-.custom-table th {
-  background: linear-gradient(90deg, #2563eb, #3b82f6);
-  color: #fff;
-  cursor: pointer;
-}
-
-/* Pastikan kolom waktu cukup lebar dalam satu baris */
-.custom-table td:nth-child(2) {
-  white-space: nowrap;
-}
-
 /* Custom footer */
 .custom-footer {
   padding: 0.75rem;
@@ -200,18 +272,6 @@ const filteredData = computed(() => {
   background-color: var(--vp-c-bg);
   border-top: 1px solid var(--vp-c-border);
   font-size: 0.8rem;
-}
-
-/* Responsif mobile */
-@media (max-width: 768px) {
-  .custom-table th,
-  .custom-table td {
-    padding: 0.5rem;
-    font-size: 0.8rem;
-  }
-  .search-input {
-    padding: 0.5rem;
-  }
 }
 
 </style>
