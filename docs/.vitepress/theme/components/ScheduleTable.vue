@@ -67,7 +67,7 @@ const headers = [
   { text: 'Waktu', value: 'waktu', width: 120 },
   { text: 'Mata Kuliah', value: 'mataKuliah', width: 330 },
   { text: 'Kode', value: 'kode' },
-  { text: 'Dosen', value: 'dosen', sortable: true, width: 250 },
+  { text: 'Dosen', value: 'dosen', sortable: true, width: 280 },
 ]
 
 // Data dengan tambahan field untuk expand
