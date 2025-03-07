@@ -77,7 +77,7 @@ const data = ref([
     waktu: '08:00 – 09:30',
     kode: 'MK47',
     mataKuliah: 'Pemasaran Digital (2T)',
-    dosen: 'Ade Sutriyono, MM.SI. dan Hendri Rosmawan, M.Kom.',
+    dosen: 'Hendri Rosmawan, M.Kom.',
     sipen: '(1) Muhammad Rizki, (2) Sabili Muhammad Azka',
     keterangan: 'Kelas reguler',
     ruangan: 'Lab 3'
@@ -87,7 +87,7 @@ const data = ref([
     waktu: '08:00 – 09:30',
     kode: 'MK45',
     mataKuliah: 'Manajemen Sistem Informasi Kesehatan (2T)',
-    dosen: 'Fardhoni, ST., MM., M.Kom. dan Dr. Andinna Ananda Yusuff, MM.',
+    dosen: 'Dr. Andinna Ananda Yusuff, MM.',
     sipen: '(1) Aurelia Septia Apriani, (2) Dimas Surya Putra',
     keterangan: 'Kelas bilingual',
     ruangan: 'Ruang 405'
@@ -117,7 +117,7 @@ const data = ref([
     waktu: '08:00 – 10:30',
     kode: 'MK11',
     mataKuliah: 'Pembelajaran Mesin (2T1P)',
-    dosen: 'Ade Sutriyono, MM.SI. & Ahmad Ngiliyun, M.Kom.',
+    dosen: 'Ahmad Ngiliyun, M.Kom.',
     sipen: 'Jaisyi Bagir Rafsyahid',
     keterangan: 'Kelas intensif',
     ruangan: 'Lab AI'
@@ -137,7 +137,7 @@ const data = ref([
     waktu: '13:00 – 15:30',
     kode: 'MK08',
     mataKuliah: 'Rekayasa Perangkat Lunak (2T1P)',
-    dosen: 'Syaeful Ramadhan, M.Kom. & Ahmad Ngiliyun, M.Kom.',
+    dosen: 'Ahmad Ngiliyun, M.Kom.',
     sipen: 'Muhamad Fuad Aziz',
     keterangan: 'Kelas industri',
     ruangan: 'Lab DevOps'
