@@ -18,6 +18,7 @@
       header-text-direction="center"
       body-text-direction="center"
       show-index
+      alternating
 
       class="custom-table"
     >
@@ -29,12 +30,10 @@
       <!-- Slot expandable row -->
       <template #expand="item">
         <div class="expand-content">
-            <p><strong>Keterangan:</strong></p>
             <p><strong>Sipen:</strong></p>
             <p><span v-html="splitValues(item.sipen)"></span></p>
             <p>{{ item.keterangan || '-' }}</p>
-            <p><strong>Ruangan:</strong></p>
-            <p>{{ item.ruangan || 'TBA' }}</p>
+            <p><strong>Ruangan:</strong>{{ item.ruangan || 'TBA' }}</p>
           
         </div>
       </template>
