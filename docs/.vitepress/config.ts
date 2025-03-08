@@ -51,7 +51,6 @@ export default defineConfig({
               { text: 'PDF', link: '/blog/pdfmake' },
               { text: 'Teams', link: '/team' },
               { text: 'Teammate', link: '/blog/teammate' },
-              { text: 'Test Page', link: '/blog/test/' },
               { text: '404', link: '/resources/internal/' },
 
             ],
