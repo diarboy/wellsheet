@@ -80,6 +80,7 @@ export default defineConfig({
           { text: 'Tutorials', link: '/blog/tutorials' },
           { text: 'Full-Stack Website', link: '/blog/full-stack' },
           { text: 'Dasar Regex', link: '/blog/regex' },
+          { text: 'Github Dev Workflow', link: '/blog/gitdev' },
         ],
       },
       {
