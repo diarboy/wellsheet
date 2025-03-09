@@ -8,7 +8,22 @@ const wordsPerMinute = 200;
 const wordCount = ref(0);
 const readingTime = ref("0 menit 0 detik");
 
+const formattedDate = ref("");
+
 onMounted(() => {
+
+// Format tanggal agar lebih terbaca
+const formatDate = (dateString) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
+};
+
+if (frontmatter.value.date) {
+  formattedDate.value = formatDate(frontmatter.value.date);
+} else if (page.value.lastUpdated) {
+  formattedDate.value = formatDate(page.value.lastUpdated);
+}
+
   setTimeout(() => {
     // Ambil semua teks dari halaman artikel
     const content = document.querySelector('.VPDoc')?.innerText || "";
@@ -33,7 +48,7 @@ onMounted(() => {
 
   <div class="meta">
   <span>✍️ {{ frontmatter.author }}</span> |
-  <span>📅 {{ frontmatter.date }}</span> <br>
+  <span>📅 {{ formattedDate }}</span> <br>
   <span>🕛 {{ readingTime }} read</span> | ⏳ {{ wordCount }} words </br>
 
 </div>
