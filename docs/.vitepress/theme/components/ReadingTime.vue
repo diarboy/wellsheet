@@ -15,7 +15,7 @@ onMounted(() => {
 // Format tanggal agar lebih terbaca
 const formatDate = (dateString) => {
   const date = new Date(dateString);
-  return date.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 };
 
 if (frontmatter.value.date) {
