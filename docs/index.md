@@ -57,6 +57,7 @@ features:
 Allbibek is your go-to resource for modern web development knowledge. Whether you're a beginner or an experienced developer, our comprehensive guides and tutorials will help you level up your skills.
 
 <FAQ />
+
 ## <span class="title">Latest Updates</span>
 
 - 🆕 New tutorial: Advanced TypeScript Patterns
