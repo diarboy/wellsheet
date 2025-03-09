@@ -76,6 +76,7 @@ export default defineConfig({
         items: [
           { text: 'Getting Started', link: '/guide' },
           { text: 'Tutorials', link: '/blog/tutorials' },
+          { text: 'Git Dev Workflows', link: '/blog/gitdev' },
           { text: 'Full-Stack Website', link: '/blog/full-stack' },
           { text: 'Dasar Regex', link: '/blog/regex' },
         ],
