@@ -27,7 +27,7 @@ I'm always excited to connect with fellow developers and tech enthusiasts. Feel 
 
 - 💼 **LinkedIn**: ↗️ <span class="title">[Ardi Syah](https://linkedin.com/in/ardibukan)</span>
 - 🐱 **GitHub**: ↗️ <span class="title"> [@diarboy](https://github.com/diarboy)</span> 
-- 🐦 **Twitter**: ↗️ <span class="title">[@allbibek ](https://x.com/allbibek)</span> 
+- 🐦 **Twitter**: ↗️ <span class="title">[@allbibek ](https://x.com/allbibek_)</span> 
 
 ## Direct Contact
 
@@ -35,7 +35,7 @@ I'm always excited to connect with fellow developers and tech enthusiasts. Feel 
 The best way to reach me is through email or LinkedIn message.
 :::
 
-- 📧 **Email**: <span class="subtitle">[hello@allbibek.com](mailto:art_cha@yahoo.com)</span>
+- 📧 **Email**: <span class="subtitle">[hello@allbibek.com](mailto:hello@allbibek.com)</span>
 - 💬 **Discord**: ~~I don't have yet~~
 
 ## Office Hours
