@@ -81,11 +81,11 @@ const downloadDOCX = async () => {
 <h2 class="subtitle" style="text-align: center;">This Playground is <br>a Work in Progress</h2>
   <div class="playground-container">
     <div class="editor">
-      <h2 class="title">Markdown Editor</h2>
+      <h3 class="title">Markdown Editor</h3>
       <textarea v-model="markdownText" placeholder="Tulis Markdown di sini..."></textarea>
     </div>
     <div class="preview">
-      <h2 class="title">Preview HTML</h2>
+      <h3 class="title">Preview HTML</h3>
       <div v-html="htmlOutput" class="output"></div>
       <div class="button-container">
         <a class="VPButton" @click="copyToClipboard">
@@ -107,7 +107,7 @@ const downloadDOCX = async () => {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .editor, .preview {
