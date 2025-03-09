@@ -18,4 +18,10 @@ hero:
 
 ---
 
+<script setup>
+import NotFound from '../.vitepress/theme/components/NotFound.vue';
+</script>
+
+<NotFound />
+
 <pdfmake />

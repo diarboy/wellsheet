@@ -14,7 +14,7 @@ hero:
       text: Get Started
       link: /guide
     - theme: alt
-      text: Explore My Work
+      text: See Gallery
       link: /gallery
 
 features:

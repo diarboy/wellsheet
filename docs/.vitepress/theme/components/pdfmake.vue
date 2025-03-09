@@ -75,13 +75,14 @@ const downloadDOCX = async () => {
 </script>
 
 <template>
+<h1 class="subtitle" style="text-align: center;">Under Development</h1>
   <div class="playground-container">
     <div class="editor">
-      <h3>Markdown Editor</h3>
+      <h2 class="title">Markdown Editor</h2>
       <textarea v-model="markdownText" placeholder="Tulis Markdown di sini..."></textarea>
     </div>
     <div class="preview">
-      <h3>Preview HTML</h3>
+      <h2 class="title">Preview HTML</h2>
       <div v-html="htmlOutput" class="output"></div>
       <div class="button-container">
         <button @click="copyToClipboard">Copy HTML</button>
