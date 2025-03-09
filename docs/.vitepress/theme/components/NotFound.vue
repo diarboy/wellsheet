@@ -9,7 +9,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
     <p class="code code-small">{{ theme.notFound?.code ?? 'Ooops!' }}</p>
     <p class="code code-large">{{ theme.notFound?.code ?? "Sorry" }}</p>
     <p class="code code-small">{{ theme.notFound?.code ?? "We're" }}</p>
-    <h1 class="title">{{ theme.notFound?.title ?? 'UNDER MAINTENANCE' }}</h1>
+    <h1 class="title">{{ theme.notFound?.title ?? 'UNDER DEVELOPMENT' }}</h1>
     <div class="divider" />
     <blockquote class="quote">
       {{
@@ -32,7 +32,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 <style scoped>
 .NotFound {
-  padding: 64px 24px 96px;
+  padding: 20px 24px 20px;
   text-align: center;
 }
 

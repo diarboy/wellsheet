@@ -5,6 +5,9 @@ import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 import { Document, Packer, Paragraph, TextRun } from "docx";
 import { saveAs } from "file-saver";
+import { useData, withBase } from "vitepress";
+
+const { theme } = useData();
 
 if (pdfMake && pdfFonts) {
   pdfMake.vfs = pdfFonts.pdfMake ? pdfFonts.pdfMake.vfs : pdfFonts.vfs;
@@ -75,7 +78,7 @@ const downloadDOCX = async () => {
 </script>
 
 <template>
-<h1 class="subtitle" style="text-align: center;">Under Development</h1>
+<h1 class="subtitle" style="text-align: center;">This Playground is <br>a Work in Progress</h1>
   <div class="playground-container">
     <div class="editor">
       <h2 class="title">Markdown Editor</h2>
@@ -85,9 +88,15 @@ const downloadDOCX = async () => {
       <h2 class="title">Preview HTML</h2>
       <div v-html="htmlOutput" class="output"></div>
       <div class="button-container">
-        <button @click="copyToClipboard">Copy HTML</button>
-        <button @click="downloadPDF">Download PDF</button>
-        <button @click="downloadDOCX">Download DOCX</button>
+        <a class="VPButton" @click="copyToClipboard">
+          {{ theme.value?.copyButtonText ?? "📄 Copy HTML" }}
+        </a>
+        <a class="VPButton brand" @click="downloadPDF">
+          {{ theme.value?.downloadPdfButtonText ?? "PDF &darr;" }}
+        </a>
+        <a class="VPButton alt" @click="downloadDOCX">
+          {{ theme.value?.downloadDocxButtonText ?? "DOCX &darr;" }}
+        </a>
       </div>
     </div>
   </div>
@@ -129,27 +138,41 @@ textarea {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-button {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background: #2E7D32;
-  color: white;
-  border: none;
-  border-radius: 5px;
+.VPButton {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
   cursor: pointer;
-  margin-right: 5px;
+  transition: 0.2s;
+  text-decoration: none;
 }
 
-button:hover {
-  background: green;
-  transform: scale(1.05);
+.VPButton.brand {
+  background-color: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
+  border-radius: 36px;
 }
 
-button:active {
-  transform: scale(0.98);
+.VPButton.alt {
+  background-color: var(--vp-button-alt-bg);
+  color: var(--vp-button-alt-text);
+  border-radius: 36px;
+}
+
+.VPButton.sponsor {
+  background-color: var(--vp-button-sponsor-bg, #ffcc00);
+  color: var(--vp-button-sponsor-text, #000);
+  border-radius: 36px;
+}
+
+.VPButton:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
