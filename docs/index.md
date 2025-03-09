@@ -43,7 +43,7 @@ features:
   - icon: 🎨
     title: UI/UX Design
     details: Explore modern design patterns and user experience principles.
-    link: /blog/myschedule
+    link: /blog/blogtest
   - icon: 🔐
     title: Security
     details: Implement robust security measures in your applications.

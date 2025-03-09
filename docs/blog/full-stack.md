@@ -15,7 +15,7 @@ In this article, we will walk you through the process of building a full-stack w
 
 ---
 
-## 📂 Project Structure
+## <a id="project-structure"></a> 📂 Project Structure
 
 Before we dive into the technical details, let's first create the structure of the project. A typical full-stack application consists of both a front-end and a back-end. We'll organize the project with separate directories for each.
 
@@ -33,7 +33,7 @@ my-project/
 └── README.md
 ```
 
-## 🗄️ Database Design with Supabase
+## <a id="database-design-with-supabase"></a> 🗄️ Database Design with Supabase
 
 ### ❓ What is Supabase?
 
@@ -208,7 +208,7 @@ By combining the database design, authentication, and security features in Supab
 
 ---
 
-## 🎨 Front-End Development with Vue.js
+## <a id="front-end-development-with-vuejs"></a> 🎨 Front-End Development with Vue.js
 
 For the front-end, we will use **Vue.js**, a popular JavaScript framework. Vue.js is known for its simplicity and flexibility, which makes it an ideal choice for building interactive UIs.
 
@@ -254,7 +254,7 @@ function handleLogin() {
 
 ---
 
-## 🔐 User Authentication with API
+## <a id="user-authentication-with-api"></a> 🔐 User Authentication with API
 
 We will use a REST API to handle the user login and registration process. Our back-end server will expose endpoints for authentication and managing user data.
 
@@ -300,7 +300,7 @@ module.exports = router;
 
 ---
 
-## 🆕 Back-End Development with Node.js
+## <a id="back-end-development-with-nodejs"></a> 🆕 Back-End Development with Node.js
 
 For the back-end, we will use **Node.js** with the **Express** framework. This setup will allow us to create RESTful APIs for user authentication, CRUD operations, and dashboard management.
 
@@ -317,7 +317,7 @@ For the back-end, we will use **Node.js** with the **Express** framework. This s
 
 ---
 
-## 📝 Handling Forms, CRUD, and Dashboard
+## <a id="handling-forms-crud-and-dashboard"></a> 📝 Handling Forms, CRUD, and Dashboard
 
 In this section, we will implement the logic for handling user input forms, performing CRUD operations, and creating a user dashboard.
 

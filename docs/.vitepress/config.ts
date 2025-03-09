@@ -75,7 +75,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Getting Started', link: '/guide' },
-          { text: 'Tutorials', link: '/blog/tutorials' },
+          { text: 'Web Dev Tutorials', link: '/blog/tutorials' },
           { text: 'Git Dev Workflows', link: '/blog/gitdev' },
           { text: 'Full-Stack Website', link: '/blog/full-stack' },
           { text: 'Dasar Regex', link: '/blog/regex' },
@@ -87,8 +87,8 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Introduction', link: '/blog/introduction' },
-          { text: 'Blog Tester', link: '/blog/blogtester.md' },
           { text: 'MyFirst Post', link: '/blog/my-first-post' },
+          { text: 'BlogTest', link: '/blog/blogtest.md' },
         ],
       },
     ],

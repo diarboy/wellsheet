@@ -14,8 +14,11 @@ import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 
 ![VitePress Logo](/img/hero.png){style="width:300px; height:auto;"}
 
-<h1>Jangan Banyak Tanya! <span class="title">Ikuti Saja!</span></h1>
-Begini Cara Bertahan di Indonesia.
+<h3 style="font-size: 32px;">
+    <span class="title">Jangan Banyak Tanya!</span><br>
+    <span class="subtitle">Ikuti Saja!</span><br>
+</h3>
+<em>Begini Cara Bertahan di Indonesia.</em>
 
 ## Manut Saja
 

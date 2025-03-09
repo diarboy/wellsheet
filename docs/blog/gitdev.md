@@ -12,21 +12,6 @@ import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 
 <ReadingTime />
 
-## 📑 Daftar Isi
-
-1. [🔄 Clone Repository & Branch Default](#1-clone-repository--branch-default-)
-2. [💡 Membuat Branch Baru](#2-membuat-branch-baru-)
-3. [🌐 Remote di Git](#3-remote-di-git-)
-4. [🔍 Menjalankan `git branch -r`](#4-menjalankan-git-branch--r-)
-5. [❗ Branch `dev` Belum Ada di Remote](#5-branch-dev-belum-ada-di-remote-)
-6. [📤 Push Perubahan Branch `dev` pada `main`](#6-push-perubahan-branch-dev-pada-main-)
-7. [⏪ Rollback Commit di Branch `dev`](#7-rollback-commit-di-branch-dev-)
-8. [⏪ Rollback di Branch `main` (Jika Terlanjur Merge `dev`)](#8-rollback-di-branch-main-jika-terlanjur-merge-dev-)
-9. [🚮 Menghapus Branch `dev` Setelah Merge](#9-menghapus-branch-dev-setelah-merge-)
-
----
----
-
 ## 1. Clone Repository & Branch Default 🔄
 
 Saat kita meng-clone sebuah repository, hanya akan menampilkan **branch default** (biasanya `main` atau `master`) yang akan otomatis di-checkout. Namun, branch lainnya hanya tersedia di remote repository.
