@@ -38,7 +38,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 @media (min-width: 768px) {
   .NotFound {
-    padding: 96px 32px 168px;
+    padding: 40px 32px 40px;
   }
 }
 
