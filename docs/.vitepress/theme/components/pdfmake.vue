@@ -78,7 +78,7 @@ const downloadDOCX = async () => {
 </script>
 
 <template>
-<h1 class="subtitle" style="text-align: center;">This Playground is <br>a Work in Progress</h1>
+<h2 class="subtitle" style="text-align: center;">This Playground is <br>a Work in Progress</h2>
   <div class="playground-container">
     <div class="editor">
       <h2 class="title">Markdown Editor</h2>
