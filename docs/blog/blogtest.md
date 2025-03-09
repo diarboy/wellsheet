@@ -8,17 +8,19 @@ date: 05 April 2025
 import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 </script>
 
-# {{ $frontmatter.title }} <Badge type="info" text="blog" /><Badge type="tip" text="^1.6.3" /><Badge type="warning" text="beta" />
+# {{ $frontmatter.title }} <Badge type="info" text="blog" /><Badge type="tip" text="^1.6.3" /><Badge type="warning" text="test" />
 
 <ReadingTime />
 
 ![VitePress Logo](/img/hero.png){style="width:300px; height:auto;"}
 
-<h3 style="font-size: 28px;">
-    <span class="title">Jangan Banyak Tanya!</span><br>
-    <span class="subtitle">Ikuti Saja!</span><br>
-</h3>
-<em>Begini Cara Bertahan di Indonesia.</em>
+<div class="wrapper">
+    <h3 style="font-size: 22px;">
+        <span class="title">Jangan Banyak Tanya!</span><br>
+        <span class="subtitle" style="font-size: 48px; line-height: 54px; letter-spacing: 2px">Ikuti Saja.</span><br>
+    </h3>
+    <em>Begini Cara Bertahan di Indonesia.</em>
+</div>
 
 ## Manut Saja
 
@@ -72,7 +74,7 @@ Tan Malaka menyebut logika mistika sebagai tradisi berpikir feodal, warisan sist
 <PinterestEmbed pinUrl="https://www.pinterest.com/pin/358810295291571971/" />
 -->
 
-Meskipun telah <span style="background-color: red; padding: 0px 4px;">merdeka</span> dari penjajahan fisik, kita masih terjajah dalam cara berpikir. Kita masih tunduk pada otoritas tanpa mempertanyakan kebenarannya. Kita masih gemar mengandalkan *Orang Pintar*.
+Meskipun telah `merdeka` dari penjajahan fisik, kita masih terjajah dalam cara berpikir. Kita masih tunduk pada otoritas tanpa mempertanyakan kebenarannya. Kita masih gemar mengandalkan *Orang Pintar*.
 
 Mungkin dukun sudah sedikit, tapi mereka menjelma jadi influencer, abang-abangan, penjual agama, atau semua yang menjual solusi instan untuk menyelesaikan masalah yang bisa diselesaikan dengan skeptisme, logika, dan ilmu pengetahuan.
 
