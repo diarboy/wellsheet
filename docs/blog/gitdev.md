@@ -22,18 +22,27 @@ git fetch origin
 # Fetch branch terbaru dari remote jika tidak terdeteksi
 git fetch --all
 ```
+### Membuat Branch Baru
+1. Membuat Branch Baru
+   ```bash
+   git branch nama-branch
+   ```
 
-Kemudian, untuk berpindah ke branch `dev`, gunakan:
-
-```bash
-git checkout -b dev origin/dev
-```
-
-Atau lebih sederhana di versi terbaru Git (>=2.23):
-
-```bash
-git switch dev
-```
+2. Membuat Branch Baru Sekaligus Berpindah
+   ```bash
+   git checkout -b nama-branch
+   ```
+   `-b` pada checkout berarti membuat dan berpindah ke branch baru.
+   
+3. Kemudian, untuk beralih ke branch, gunakan:
+   ```bash
+   git checkout dev nama-branch
+   ```
+   
+   Atau lebih sederhana di versi terbaru Git (>=2.23):
+   ```bash
+   git switch nama-branch
+   ```
 
 Jika `dev` sudah ada di remote, Git akan otomatis membuat branch lokal dan melacaknya dari remote.
 
