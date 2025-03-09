@@ -1,7 +1,6 @@
 ---
 title: Github Dev Workflow 🚀
 author: Ardi Syah
-date: March 9, 2025
 ---
 
 <script setup>
