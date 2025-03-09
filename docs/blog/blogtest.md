@@ -14,7 +14,7 @@ import ReadingTime from '../.vitepress/theme/components/ReadingTime.vue';
 
 ![VitePress Logo](/img/hero.png){style="width:300px; height:auto;"}
 
-<h3 style="font-size: 32px;">
+<h3 style="font-size: 28px;">
     <span class="title">Jangan Banyak Tanya!</span><br>
     <span class="subtitle">Ikuti Saja!</span><br>
 </h3>
