@@ -32,7 +32,7 @@ const { theme } = useData() // Tetap gunakan useData() dari VitePress
 
 <style scoped>
 .NotFound {
-  padding: 24px 24px 56px;
+  padding: 20px 24px 20px;
   text-align: center;
 }
 
