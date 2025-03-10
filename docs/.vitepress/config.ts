@@ -100,7 +100,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present <span class="title" allbibek'></span>,
+      copyright: 'Copyright © 2024-present allbibek,
     },
     outline: [2, 3],
   },
