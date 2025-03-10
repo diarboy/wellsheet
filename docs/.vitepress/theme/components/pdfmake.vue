@@ -78,14 +78,14 @@ const downloadDOCX = async () => {
 </script>
 
 <template>
-<h2 class="subtitle" style="text-align: center;">This Playground is <br>a Work in Progress</h2>
+<h1 class="subtitle" style="text-align: center;">This Playground is <br>a Work in Progress</h1>
   <div class="playground-container">
     <div class="editor">
-      <h1 class="title">Markdown Editor</h1>
+      <h2 class="title">Markdown Editor</h2>
       <textarea v-model="markdownText" placeholder="Tulis Markdown di sini..."></textarea>
     </div>
     <div class="preview">
-      <h1 class="title">Preview HTML</h1>
+      <h2 class="title">Preview HTML</h2>
       <div v-html="htmlOutput" class="output"></div>
       <div class="button-container">
         <a class="VPButton" @click="copyToClipboard">
@@ -107,6 +107,7 @@ const downloadDOCX = async () => {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .editor, .preview {
@@ -118,10 +119,8 @@ textarea {
   height: 300px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: monospace;
-  background: transparent;
-  margin-top: 5px;
 }
 
 .output {
@@ -129,7 +128,7 @@ textarea {
   min-height: 300px;
   padding: 10px;
   background: transparent;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: auto;
   word-wrap: break-word;
   color: var(--vp-c-text-1);
