@@ -1,74 +1,68 @@
 {
-  "hash": "baf7914f",
-  "configHash": "08c8473e",
-  "lockfileHash": "136b2d97",
-  "browserHash": "7fdf1dc8",
+  "hash": "e7f1588a",
+  "configHash": "a6e88a07",
+  "lockfileHash": "f836cb0b",
+  "browserHash": "d37dd3d1",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "53959218",
+      "fileHash": "5de8e47a",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "22da5959",
+      "fileHash": "54d03ebe",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "80dc1a4d",
+      "fileHash": "eb70b3d2",
       "needsInterop": false
     },
     "vue-easy-lightbox": {
       "src": "../../../../node_modules/vue-easy-lightbox/dist/vue-easy-lightbox.esm.min.js",
       "file": "vue-easy-lightbox.js",
-      "fileHash": "4bd4751d",
+      "fileHash": "27e37076",
       "needsInterop": false
     },
     "swiper/vue": {
       "src": "../../../../node_modules/swiper/swiper-vue.mjs",
       "file": "swiper_vue.js",
-      "fileHash": "eb9bd51c",
+      "fileHash": "247c8c78",
       "needsInterop": false
     },
     "markdown-it": {
       "src": "../../../../node_modules/markdown-it/index.mjs",
       "file": "markdown-it.js",
-      "fileHash": "30351003",
+      "fileHash": "c7ce41bd",
       "needsInterop": false
     },
     "pdfmake/build/pdfmake": {
       "src": "../../../../node_modules/pdfmake/build/pdfmake.js",
       "file": "pdfmake_build_pdfmake.js",
-      "fileHash": "9d546109",
+      "fileHash": "9a67bae3",
       "needsInterop": true
     },
     "pdfmake/build/vfs_fonts": {
       "src": "../../../../node_modules/pdfmake/build/vfs_fonts.js",
       "file": "pdfmake_build_vfs_fonts.js",
-      "fileHash": "1497ab81",
+      "fileHash": "a2bb9fdf",
       "needsInterop": true
     },
     "docx": {
       "src": "../../../../node_modules/docx/dist/index.mjs",
       "file": "docx.js",
-      "fileHash": "28ba1bd2",
+      "fileHash": "dcb75d27",
       "needsInterop": false
     },
     "file-saver": {
       "src": "../../../../node_modules/file-saver/dist/FileSaver.min.js",
       "file": "file-saver.js",
-      "fileHash": "fa94d020",
+      "fileHash": "b4f245e0",
       "needsInterop": true
-    },
-    "vue3-easy-data-table": {
-      "src": "../../../../node_modules/vue3-easy-data-table/dist/vue3-easy-data-table.es.js",
-      "file": "vue3-easy-data-table.js",
-      "fileHash": "46f42d6c",
-      "needsInterop": false
     }
   },
   "chunks": {
