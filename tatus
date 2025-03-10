@@ -1,0 +1,105 @@
+* [33m63bec40[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Refactor: cleanup & fix config
+[31m|[m * [33m238d58b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m rebase
+[31m|[m * [33mb6d9f3a[m fix
+[31m|[m * [33m0041cda[m Update config.ts
+[31m|[m[31m/[m  
+* [33m35de70c[m Update config.ts
+* [33m4a453a0[m Update config.ts
+* [33mb060d6e[m Update pdfmake.vue
+* [33mba90dd3[m Update contact.md
+* [33m230ea9e[m Update pdfmake.vue
+* [33mb4d21a9[m Update pdfmake.vue
+* [33m1e2fa3a[m Update index.md
+* [33ma580d5a[m Update NotFound.vue
+*   [33me4f93b9[m Merge pull request #4 from diarboy/dev
+[33m|[m[34m\[m  
+[33m|[m * [33meeca219[m fix padding 404
+* [34m|[m [33m9e78be1[m Merge pull request #3 from diarboy/dev
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33mb22ea06[m padding
+[35m|[m * [33mce14095[m playground
+* [36m|[m [33m984b21b[m Merge pull request #2 from diarboy/dev
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33mb6c3eb7[m modif blogtest
+* [1;32m|[m [33mccd4d6c[m test lastUpdated en-Us
+* [1;32m|[m [33mb876177[m delete date gitdev
+* [1;32m|[m [33md4ef8b8[m edit lastUpdated on ReadingTime.vue
+[1;32m|[m[1;32m/[m  
+* [33md21261d[m config.ts
+* [33mf036fea[m configts
+* [33m64f568c[m fix pg
+* [33me8b89a2[m add -b
+* [33me2c5886[m gitdev
+* [33m25d4da2[m Update index.md
+* [33m0f7363f[m Update config.ts
+* [33m393856d[m failed
+* [33m72979e7[m event
+* [33m3314bfe[m Update ScheduleTable.vue
+* [33m7e4a26c[m Update ScheduleTable.vue
+* [33m7dec74a[m Update ScheduleTable.vue
+* [33m4699a5d[m Update ScheduleTable.vue
+* [33m7346048[m Update ScheduleTable.vue
+* [33meb4ad4c[m Update ScheduleTable.vue
+* [33me0430c5[m Update ScheduleTable.vue
+* [33mcca0d11[m Update ScheduleTable.vue
+* [33maf1709d[m Update ScheduleTable.vue
+* [33m43e202b[m Update ScheduleTable.vue
+* [33mf8f69d6[m Update ScheduleTable.vue
+* [33m8e9b77c[m Update ScheduleTable.vue
+* [33ma6fcaa1[m date
+* [33m1b1a480[m easytable
+* [33m1c728f8[m easytable
+* [33m82bb28e[m easytable
+* [33m944fb38[m sch
+* [33mc46abe8[m Update config.ts
+* [33m9e3678d[m Update blogtester.md
+* [33maf38b23[m Update config.ts
+* [33m1eca61d[m Update blogtester.md
+* [33m01b1e44[m Update blogtester.md
+* [33m48acf47[m fix read
+* [33mb313112[m fix index.js
+* [33mf929694[m f
+* [33mabe8526[m fix word count
+* [33m0381daf[m Update test.md
+* [33m3c16241[m Update ReadingTime.vue
+* [33m3fde2ed[m Update config.ts
+* [33ma4142f1[m Update ReadingTime.vue
+* [33m34b15d1[m Update test.md
+* [33m75c64a8[m Update config.ts
+* [33m9168686[m Create test.md
+* [33m564e561[m Create ReadingTime.vue
+* [33mce0e44e[m addexp
+* [33m674cda5[m fix ts
+* [33m61184f8[m test read
+* [33m1273164[m test
+* [33mc1fe9ac[m blog.vue
+* [33md9f0695[m test custom
+* [33m9f62eae[m add custom layout
+* [33m26d077e[m pg
+* [33mda3b959[m Update pdfmake.md
+* [33m12239f4[m Update guide.md
+* [33mc14bc31[m Add files via upload
+* [33m538c1ef[m gallery
+* [33mf46ac53[m Update custom.css
+* [33mb5d51fe[m Update config.ts
+* [33me6b211f[m Update team.md
+* [33m0209c44[m Update config.ts
+* [33m88de497[m Update index.md
+* [33m30f60f4[m Update custom.css
+* [33m7934243[m Update index.md
+* [33m9312dc2[m Update config.ts
+* [33m73c3f53[m test
+* [33mc90b47c[m add pdfmake
+* [33m7d71273[m fix
+* [33m1d4b5ae[m test
+* [33mb605930[m build
+* [33mb0e2db5[m fix base
+* [33m03b5dbd[m Update .gitignore
+* [33mce749c1[m Update .gitignore
+* [33m3497b11[m fix gallery
+* [33m73aa95e[m test2 88s
+* [33m64036b7[m test no vue
+* [33mb82fbdc[m pdf
+* [33md2ddddf[m fix
+* [33m72124e4[m Add files via upload
+* [33m9f38721[m Initial commit
